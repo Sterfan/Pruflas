@@ -17,7 +17,7 @@ public class Healthpickup : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
 
-        //FindObjectOfType<AudioManager>().Play("UpgradeHealth");
+        FindObjectOfType<AudioManager>().Play("UpgradeHealth");
 
         if (playerHealth.currentHealth < playerHealth.maxHealth)
         {

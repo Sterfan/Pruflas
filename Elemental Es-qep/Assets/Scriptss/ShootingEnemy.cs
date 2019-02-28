@@ -19,8 +19,41 @@ public class ShootingEnemy : MonoBehaviour
             GameObject bullet = (GameObject)Instantiate(Bulletprefab, transform.position, transform.rotation);
             bullet.layer = gameObject.layer;
 
-            //FindObjectOfType<AudioManager>().Play("RockShotTest1");
+            //if (string Bulletprefab == "EarthEnemybullet")
+            //{
+            //    GameObject bullet = (GameObject)Instantiate(Bulletprefab, transform.position, transform.rotation);
+            //    bullet.layer = gameObject.layer;
 
+            //    FindObjectOfType<AudioManager>().Play("RockShotTest1");
+
+            //}
+
+            //if (string Bulletprefab == "FireBulletEnemy")
+            //{
+            //    GameObject bullet = (GameObject)Instantiate(Bulletprefab, transform.position, transform.rotation);
+            //    bullet.layer = gameObject.layer;
+
+            //    FindObjectOfType<AudioManager>().Play("FireShotTest1");
+
+            //}
+
+            //if (string Bulletprefab == "WaterBulletEnemy")
+            //{
+            //    GameObject bullet = (GameObject)Instantiate(Bulletprefab, transform.position, transform.rotation);
+            //    bullet.layer = gameObject.layer;
+
+            //    FindObjectOfType<AudioManager>().Play("WaterShotTest1");
+
+            //}
+
+            //if (string Bulletprefab == "WindBulletEnemy")
+            //{
+            //    GameObject bullet = (GameObject)Instantiate(Bulletprefab, transform.position, transform.rotation);
+            //    bullet.layer = gameObject.layer;
+
+            //    FindObjectOfType<AudioManager>().Play("WindShotTest1");
+
+            //}
         }
     }
 }
