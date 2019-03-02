@@ -6,6 +6,7 @@ public class Healthpickup : MonoBehaviour
     HealthManagerPlayer playerHealth;
 
     public float healthPickUp = 5f;
+    float deleteTime = 1f;
 
     void Awake()
     {
@@ -23,6 +24,16 @@ public class Healthpickup : MonoBehaviour
         {
             Destroy(gameObject);
             playerHealth.currentHealth = playerHealth.currentHealth + healthPickUp;
+        }
+    }
+
+    void Update()
+    {
+        deleteTime -= Time.deltaTime;
+
+        if (deleteTime <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 }

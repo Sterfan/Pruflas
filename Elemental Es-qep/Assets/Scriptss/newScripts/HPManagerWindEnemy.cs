@@ -8,6 +8,7 @@ public class HPManagerWindEnemy : MonoBehaviour
     public int maxHealth = 6;
     public int currentHealth;
     public Slider healthBar;
+    public GameObject deathAnimation;
 
     void Start()
     {
@@ -21,6 +22,7 @@ public class HPManagerWindEnemy : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            Instantiate(deathAnimation, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }

@@ -31,16 +31,18 @@ public class HealthManagerPlayer : MonoBehaviour
             Application.LoadLevel(Application.loadedLevel);
         }
     }
-     void OnTriggerEnter2D()
+     void OnTriggerEnter2D(Collider2D other)
     {
         
-        Debug.Log("Player Health -1");
+       if (other.gameObject.tag == "HP")
+        {
+            currentHealth = currentHealth + 5f;
+        }
 
-        currentHealth--;
-        //if (other.gameObject.tag != "HP")
-        //{ 
-        //   currentHealth--;
-        //}
+        else if (other.gameObject.tag != "HP")
+        { 
+           currentHealth--;
+        }
 
     }
     //public void TakingDamage(int damagetaken)

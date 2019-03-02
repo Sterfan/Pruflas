@@ -9,6 +9,7 @@ public class HPManagerFireEnemy : MonoBehaviour
     private int maxHealth = 10;
     public int currentHealth;
     public Slider healthBar;
+    public GameObject deathAnimation;
 
     void Start()
     {
@@ -22,6 +23,7 @@ public class HPManagerFireEnemy : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            Instantiate(deathAnimation, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }

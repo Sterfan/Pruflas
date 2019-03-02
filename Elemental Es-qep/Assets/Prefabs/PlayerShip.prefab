@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 7532393906774372650}
   - component: {fileID: 7532393906774372651}
   - component: {fileID: 7532393906774372648}
-  - component: {fileID: 7532393906774372649}
   - component: {fileID: 7532393906774372654}
   - component: {fileID: 7532393906774372655}
+  - component: {fileID: 5577884677286817421}
   - component: {fileID: 8939447422068820007}
   - component: {fileID: 7532393906774372644}
   - component: {fileID: 7532393906774372645}
@@ -94,21 +94,9 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7532393906774372652}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7155451ff115f094ca0883785ce7fe79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7532393906774372649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7532393906774372652}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5665c734e92a18345a7e0839e4bdc0b3, type: 3}
+  m_Script: {fileID: 11500000, guid: 7155451ff115f094ca0883785ce7fe79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &7532393906774372654
@@ -141,7 +129,7 @@ MonoBehaviour:
   - {fileID: 7797463192280951499, guid: e3775571294504342a0aa4aa522d64a9, type: 3}
   - {fileID: 6239117726924804832, guid: 0f3a55a581da4c04aa9834385c7c558d, type: 3}
   currentBullet: 0
---- !u!114 &8939447422068820007
+--- !u!114 &5577884677286817421
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,11 +138,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 7532393906774372652}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d56d9c760cca9d8479e779cab023cb73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8939447422068820007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7532393906774372652}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1317f67dd101c604a869a358104cb0db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
-  rotSpeed: 180
+  moveSpeed: 7
+  rotationSpeed: 240
 --- !u!50 &7532393906774372644
 Rigidbody2D:
   serializedVersion: 4
