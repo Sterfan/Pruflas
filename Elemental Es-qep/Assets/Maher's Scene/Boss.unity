@@ -191,7 +191,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &59552124
 PolygonCollider2D:
@@ -479,7 +479,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &93148285
 PolygonCollider2D:
@@ -988,75 +988,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1001 &484186213
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7543186817763891242, guid: 46c4cacaf1026ee429dc5255446d4fa1,
-        type: 3}
-      propertyPath: m_Name
-      value: Background0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7543186817763891255, guid: 46c4cacaf1026ee429dc5255446d4fa1,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 7543186817763891255, guid: 46c4cacaf1026ee429dc5255446d4fa1,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.41
-      objectReference: {fileID: 0}
-    - target: {fileID: 7543186817763891255, guid: 46c4cacaf1026ee429dc5255446d4fa1,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7543186817763891255, guid: 46c4cacaf1026ee429dc5255446d4fa1,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7543186817763891255, guid: 46c4cacaf1026ee429dc5255446d4fa1,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7543186817763891255, guid: 46c4cacaf1026ee429dc5255446d4fa1,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7543186817763891255, guid: 46c4cacaf1026ee429dc5255446d4fa1,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7543186817763891255, guid: 46c4cacaf1026ee429dc5255446d4fa1,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7543186817763891255, guid: 46c4cacaf1026ee429dc5255446d4fa1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7543186817763891255, guid: 46c4cacaf1026ee429dc5255446d4fa1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7543186817763891255, guid: 46c4cacaf1026ee429dc5255446d4fa1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 46c4cacaf1026ee429dc5255446d4fa1, type: 3}
 --- !u!1001 &606022364
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1107,7 +1038,7 @@ PrefabInstance:
     - target: {fileID: 7532393906774372650, guid: 36b19cd676dd7c24992462daf5a7d2cc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7532393906774372650, guid: 36b19cd676dd7c24992462daf5a7d2cc,
         type: 3}
@@ -1216,7 +1147,7 @@ Transform:
   m_Children:
   - {fileID: 1159642718}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &633987142
 PolygonCollider2D:
@@ -1648,7 +1579,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &1485024837
 PolygonCollider2D:
@@ -1903,7 +1834,7 @@ Transform:
   m_Children:
   - {fileID: 1948916333}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1559611180
 MonoBehaviour:
@@ -1917,6 +1848,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e57e0e67fb33a45ad173c2d312beb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  castPoint: {fileID: 0}
+  Bulletprefab: {fileID: 0}
 --- !u!60 &1559611181
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2205,7 +2138,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &1717572486
 PolygonCollider2D:
@@ -2476,7 +2409,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &1774469968
 PolygonCollider2D:
@@ -2650,7 +2583,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
 --- !u!60 &1823580939
 PolygonCollider2D:
