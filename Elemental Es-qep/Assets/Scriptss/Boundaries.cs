@@ -4,37 +4,45 @@ using UnityEngine;
 
 public class Boundaries : MonoBehaviour
 {
-    private Vector2 screenboundary;
-    private float playerWidth;
-    private float playerHeight;
-    
+    //private Vector2 screenboundary;
+    //private float playerWidth;
+    //private float playerHeight;
+    float shipBoundaryRadius = 0.6f;
 
     void Start()
     {
-        playerWidth = transform.localScale.x / -0.19f;
-        playerHeight = transform.localScale.y / -0.19f;
-        screenboundary = new Vector2(Camera.main.aspect * Camera.main.orthographicSize + playerWidth, Camera.main.orthographicSize + playerHeight);
+        //playerWidth = transform.localScale.x / -0.19f;
+        //playerHeight = transform.localScale.y / -0.19f;
+        //screenboundary = new Vector2(Camera.main.aspect * Camera.main.orthographicSize + playerWidth, Camera.main.orthographicSize + playerHeight);
     }
 
     
     void Update()
     {
-        if (transform.position.x < -screenboundary.x)
+        Vector3 pos = transform.position;
+
+        if (pos.y + shipBoundaryRadius > Camera.main.orthographicSize)
         {
-            transform.position = new Vector2(-screenboundary.x, transform.position.y);
+            pos.y = Camera.main.orthographicSize - shipBoundaryRadius;
         }
-        else if (transform.position.x > screenboundary.x)
+        if (pos.y - shipBoundaryRadius < -Camera.main.orthographicSize)
         {
-            transform.position = new Vector2(screenboundary.x, transform.position.y);
+            pos.y = -Camera.main.orthographicSize + shipBoundaryRadius;
         }
 
-        if (transform.position.y < -screenboundary.y)
+
+        float screenRatio = (float)Screen.width / (float)Screen.height;
+        float widthOrtho = Camera.main.orthographicSize * screenRatio;
+
+
+        if (pos.x + shipBoundaryRadius > widthOrtho)
         {
-            transform.position = new Vector2(transform.position.x, - screenboundary.y);
+            pos.x = widthOrtho - shipBoundaryRadius;
         }
-        else if (transform.position.y > screenboundary.y)
+        if (pos.x -  shipBoundaryRadius < -widthOrtho)
         {
-            transform.position = new Vector2(transform.position.x, screenboundary.y);
+           pos.x = -widthOrtho + shipBoundaryRadius;
         }
+        transform.position = pos;
     }
 }

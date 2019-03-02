@@ -7,6 +7,7 @@ public class HPManagerWaterEnemy : MonoBehaviour
     public int maxHealth = 8;
     public int currentHealth;
     public Slider healthBar;
+    public GameObject deathAnimation;
 
     void Start()
     {
@@ -20,6 +21,7 @@ public class HPManagerWaterEnemy : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            Instantiate(deathAnimation, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3201833542030726895}
   - component: {fileID: 3201833542030726894}
+  - component: {fileID: 5422791434150390384}
   - component: {fileID: 3201833542030726893}
   m_Layer: 0
   m_Name: Explosion1
@@ -80,6 +81,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5422791434150390384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3201833542030726892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a1d7fb0d50ff2e40a7473b175eca4d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &3201833542030726893
 Animator:
   serializedVersion: 3

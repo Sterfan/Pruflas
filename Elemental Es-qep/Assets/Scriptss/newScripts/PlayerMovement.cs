@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float maxSpeed = 7f;
-    public float rotSpeed = 240f;
+    public float moveSpeed = 6f;
+    public float rotationSpeed = 240f;
 
     float shipBoundaryRadius = 0.5f;
 
@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
         float z = rot.eulerAngles.z;
 
 
-        z -= Input.GetAxis("Horizontal") * rotSpeed * Time.deltaTime;
+        z -= Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
 
 
         rot = Quaternion.Euler(0, 0, z);
@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 pos = transform.position;
 
-        Vector3 velocity = new Vector3(0, Input.GetAxis("Vertical") * maxSpeed * Time.deltaTime, 0);
+        Vector3 velocity = new Vector3(0, Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime, 0);
 
         pos += rot * velocity;
 

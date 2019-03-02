@@ -89,6 +89,8 @@ MonoBehaviour:
   maxHealth: 6
   currentHealth: 0
   healthBar: {fileID: 2498784278909346743}
+  deathAnimation: {fileID: 3201833542030726892, guid: 7c8e60e8ab47f2c488392ec8c7e6a823,
+    type: 3}
 --- !u!114 &4895113962803132689
 MonoBehaviour:
   m_ObjectHideFlags: 0
