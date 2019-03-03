@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &837735783403596879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 837735783403596877}
+  - component: {fileID: 837735783403596878}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &837735783403596877
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837735783403596879}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &837735783403596878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837735783403596879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a92441d0f4fca4fba72099091fceab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioFiles:
+  - audioName: FireShotTest1
+    audioClip: {fileID: 8300000, guid: 3874215afa4c3f4459bc970d7bce5ae9, type: 3}
+    volume: 1
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0
+  - audioName: WaterShotTest1
+    audioClip: {fileID: 8300000, guid: fe683547444e8254b8040a18c8427533, type: 3}
+    volume: 1
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0
+  - audioName: RockShotTest1
+    audioClip: {fileID: 8300000, guid: bd8242690d8624c4182646b790e20b98, type: 3}
+    volume: 1
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0
+  - audioName: WindShotTest1
+    audioClip: {fileID: 8300000, guid: f0807d920e67c2e4f82ffd851823029d, type: 3}
+    volume: 1
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0
+  - audioName: PlayerExplosion
+    audioClip: {fileID: 8300000, guid: 2cf5238bb6dbd08488140290059a306f, type: 3}
+    volume: 1
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0
+  - audioName: BackgroundMusic
+    audioClip: {fileID: 8300000, guid: 4d026715e672bc54885845bf3e4e0bfa, type: 3}
+    volume: 1
+    source: {fileID: 0}
+    isLooping: 1
+    playOnAwake: 1
+  - audioName: UpgradeHealth
+    audioClip: {fileID: 8300000, guid: 97639b1e992d3b44585e977c8b605f0d, type: 3}
+    volume: 1
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0
+  - audioName: CorrectHit
+    audioClip: {fileID: 8300000, guid: 97639b1e992d3b44585e977c8b605f0d, type: 3}
+    volume: 1
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0
+  - audioName: WrongHit
+    audioClip: {fileID: 8300000, guid: 2cf5238bb6dbd08488140290059a306f, type: 3}
+    volume: 1
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0

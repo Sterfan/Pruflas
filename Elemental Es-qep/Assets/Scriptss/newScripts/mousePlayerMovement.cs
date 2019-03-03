@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class mousePlayerMovement : MonoBehaviour
 {
-    private float moveSpeed = 5.0f;
+    private float moveSpeed = 8f;
 
 
     void Update()
@@ -26,7 +26,7 @@ public class mousePlayerMovement : MonoBehaviour
 
         Vector3 pos = transform.position;
 
-        pos.y += Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
+        pos.y += Input.GetAxis("Vertical") * moveSpeed  * Time.deltaTime;
         pos.x += Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
 
         transform.position = pos;
