@@ -22,6 +22,7 @@ public class HPManagerWaterEnemy : MonoBehaviour
         if (currentHealth <= 0)
         {
             Instantiate(deathAnimation, transform.position, transform.rotation);
+            FindObjectOfType<AudioManager>().Play("PlayerExplosion");
             Destroy(gameObject);
         }
     }
@@ -30,10 +31,12 @@ public class HPManagerWaterEnemy : MonoBehaviour
         if (other.gameObject.tag == "Windbullet")
         {
             currentHealth--;
+            FindObjectOfType<AudioManager>().Play("CorrectHit");
         }
         else
         {
             currentHealth--;
+            FindObjectOfType<AudioManager>().Play("WrongHit");
         }
     }
     public void TakingDamage(int damagetaken)

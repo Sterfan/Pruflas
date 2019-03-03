@@ -24,6 +24,7 @@ public class HPManagerEarthEnemy : MonoBehaviour
         if (currentHealth <= 0)
         {
             Instantiate(deathAnimation, transform.position, transform.rotation);
+            FindObjectOfType<AudioManager>().Play("PlayerExplosion");
             Destroy(gameObject);
             if (Random.Range(0, 1) <= dropRate)
             {
