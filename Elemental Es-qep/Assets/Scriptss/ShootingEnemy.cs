@@ -16,44 +16,44 @@ public class ShootingEnemy : MonoBehaviour
             cooldownTimer = ShootingDelay;
             Debug.Log("Pew!");
 
-            GameObject bullet = (GameObject)Instantiate(Bulletprefab, transform.position, transform.rotation);
-            bullet.layer = gameObject.layer;
+            //GameObject bullet = (GameObject)Instantiate(Bulletprefab, transform.position, transform.rotation);
+            //bullet.layer = gameObject.layer;
 
-            //if (string Bulletprefab == "EarthEnemybullet")
-            //{
-            //    GameObject bullet = (GameObject)Instantiate(Bulletprefab, transform.position, transform.rotation);
-            //    bullet.layer = gameObject.layer;
+            if (Bulletprefab.CompareTag("EarthEnemybullet") == true)
+            {
+                GameObject bullet = (GameObject)Instantiate(Bulletprefab, transform.position, transform.rotation);
+                bullet.layer = gameObject.layer;
 
-            //    FindObjectOfType<AudioManager>().Play("RockShotTest1");
+                FindObjectOfType<AudioManager>().Play("RockShotTest1");
 
-            //}
+            }
 
-            //if (string Bulletprefab == "FireBulletEnemy")
-            //{
-            //    GameObject bullet = (GameObject)Instantiate(Bulletprefab, transform.position, transform.rotation);
-            //    bullet.layer = gameObject.layer;
+            if (Bulletprefab.CompareTag("FireEnemybullet") == true)
+            {
+                GameObject bullet = (GameObject)Instantiate(Bulletprefab, transform.position, transform.rotation);
+                bullet.layer = gameObject.layer;
 
-            //    FindObjectOfType<AudioManager>().Play("FireShotTest1");
+                FindObjectOfType<AudioManager>().Play("FireShotTest1");
 
-            //}
+            }
 
-            //if (string Bulletprefab == "WaterBulletEnemy")
-            //{
-            //    GameObject bullet = (GameObject)Instantiate(Bulletprefab, transform.position, transform.rotation);
-            //    bullet.layer = gameObject.layer;
+            if (Bulletprefab.CompareTag("WaterEnemybullet") == true)
+            {
+                GameObject bullet = (GameObject)Instantiate(Bulletprefab, transform.position, transform.rotation);
+                bullet.layer = gameObject.layer;
 
-            //    FindObjectOfType<AudioManager>().Play("WaterShotTest1");
+                FindObjectOfType<AudioManager>().Play("WaterShotTest1");
 
-            //}
+            }
 
-            //if (string Bulletprefab == "WindBulletEnemy")
-            //{
-            //    GameObject bullet = (GameObject)Instantiate(Bulletprefab, transform.position, transform.rotation);
-            //    bullet.layer = gameObject.layer;
+            if (Bulletprefab.CompareTag("WindEnemybullet") == true)
+            {
+                GameObject bullet = (GameObject)Instantiate(Bulletprefab, transform.position, transform.rotation);
+                bullet.layer = gameObject.layer;
 
-            //    FindObjectOfType<AudioManager>().Play("WindShotTest1");
+                FindObjectOfType<AudioManager>().Play("WindShotTest1");
 
-            //}
+            }
         }
     }
 }
