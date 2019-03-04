@@ -2201,9 +2201,19 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 6ceccfe1840b6814b80f2fd85352368c, type: 3}
     - target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
         type: 3}
+      propertyPath: audioFiles.Array.data[0].volume
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
+        type: 3}
       propertyPath: audioFiles.Array.data[1].audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 59e6979273c27164e80017b05e700e44, type: 3}
+    - target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
+        type: 3}
+      propertyPath: audioFiles.Array.data[1].volume
+      value: 0.75
+      objectReference: {fileID: 0}
     - target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
         type: 3}
       propertyPath: audioFiles.Array.data[2].audioClip
@@ -2211,9 +2221,19 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: c1d5e4564288653408ed0d28b7007679, type: 3}
     - target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
         type: 3}
+      propertyPath: audioFiles.Array.data[2].volume
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
+        type: 3}
       propertyPath: audioFiles.Array.data[3].audioClip
       value: 
       objectReference: {fileID: 8300000, guid: a57920dd729449a4f80024997ef70db3, type: 3}
+    - target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
+        type: 3}
+      propertyPath: audioFiles.Array.data[3].volume
+      value: 0.75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3779f7db76977ab4983c5cc24da56d72, type: 3}
 --- !u!1 &2144536157 stripped
