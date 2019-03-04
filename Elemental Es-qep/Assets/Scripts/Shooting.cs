@@ -15,6 +15,9 @@ public class Shooting : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.X))
         {
+
+            FindObjectOfType<AudioManager>().Play("SwitchWeapon");
+
             ++currentBullet;
 
             if (currentBullet+1 > bullets.Length)
