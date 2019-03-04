@@ -17,10 +17,10 @@ public class Healthpickup : MonoBehaviour
 
     void OnTriggerEnter2D()
     {
-        
+        Destroy(gameObject);
         if (playerHealth.currentHealth < playerHealth.maxHealth)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
             playerHealth.currentHealth = playerHealth.currentHealth + healthPickUp;
         }
         FindObjectOfType<AudioManager>().Play("UpgradeHealth");
