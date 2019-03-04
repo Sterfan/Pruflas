@@ -15,10 +15,10 @@ public class HUD : MonoBehaviour
 
     void Start()
     {
-        bullets = GameObject.FindGameObjectWithTag("Firebullet").GetComponent<Shooting>();
-        bullets = GameObject.FindGameObjectWithTag("Windbullet").GetComponent<Shooting>();
-        bullets = GameObject.FindGameObjectWithTag("Waterbullet").GetComponent<Shooting>();
-        bullets = GameObject.FindGameObjectWithTag("Earthbullet").GetComponent<Shooting>();
+        //bullets = GameObject.FindGameObjectWithTag("Firebullet").GetComponent<Shooting>();
+        //bullets = GameObject.FindGameObjectWithTag("Windbullet").GetComponent<Shooting>();
+        //bullets = GameObject.FindGameObjectWithTag("Waterbullet").GetComponent<Shooting>();
+        //bullets = GameObject.FindGameObjectWithTag("Earthbullet").GetComponent<Shooting>();
 
     }
 
