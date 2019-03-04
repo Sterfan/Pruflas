@@ -22,6 +22,7 @@ TagManager:
   - EarthEnemybullet
   - WaterEnemybullet
   - HP
+  - UI
   layers:
   - Default
   - TransparentFX

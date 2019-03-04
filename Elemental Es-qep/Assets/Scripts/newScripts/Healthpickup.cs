@@ -5,8 +5,8 @@ public class Healthpickup : MonoBehaviour
 {
     HealthManagerPlayer playerHealth;
 
-    public float healthPickUp = 5f;
-    float deleteTime = 1f;
+    public float healthPickUp = 4f;
+    float deleteTime = 3f;
 
     void Awake()
     {
@@ -15,16 +15,15 @@ public class Healthpickup : MonoBehaviour
     }
 
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D()
     {
-
-        FindObjectOfType<AudioManager>().Play("UpgradeHealth");
-
+        
         if (playerHealth.currentHealth < playerHealth.maxHealth)
         {
             Destroy(gameObject);
             playerHealth.currentHealth = playerHealth.currentHealth + healthPickUp;
         }
+        FindObjectOfType<AudioManager>().Play("UpgradeHealth");
     }
 
     void Update()

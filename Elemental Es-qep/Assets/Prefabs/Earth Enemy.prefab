@@ -119,7 +119,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6276476004803965790}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e403e93f57b70fc4fb2bd01af1108549, type: 3}
   m_Name: 
@@ -556,7 +556,7 @@ MonoBehaviour:
   healthBar: {fileID: 5019662481174527730}
   deathAnimation: {fileID: 3201833542030726892, guid: 7c8e60e8ab47f2c488392ec8c7e6a823,
     type: 3}
-  dropRate: 0.15
+  dropRate: 0
   HPdrop: {fileID: 1377815570064674861, guid: 29b89377711d9f34db0af2d264968451, type: 3}
 --- !u!1001 &7201732216709980494
 PrefabInstance:
