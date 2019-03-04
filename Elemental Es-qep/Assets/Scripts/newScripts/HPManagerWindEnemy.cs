@@ -9,7 +9,7 @@ public class HPManagerWindEnemy : MonoBehaviour
     public int currentHealth;
     public Slider healthBar;
     public GameObject deathAnimation;
-    public int dropRate = 0;
+    public int dropRate = 1;
     public GameObject HPdrop;
     void Start()
     {

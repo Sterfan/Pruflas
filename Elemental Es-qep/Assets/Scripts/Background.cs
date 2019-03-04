@@ -7,7 +7,7 @@ public class Background : MonoBehaviour
     Material material;
     Vector2 offset;
 
-    private float yVelocity = 0.1f;
+    private float yVelocity = 0.09f;
 
     private void Awake()
     {

@@ -757,7 +757,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766529716}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.13, y: 2.93, z: -0.062326983}
+  m_LocalPosition: {x: -1.41, y: 2.46, z: -0.062326983}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 774465950}
@@ -890,7 +890,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855405016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.75, y: 4.25, z: -0.062326983}
+  m_LocalPosition: {x: 3.66, y: 3.82, z: -0.062326983}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 405935234}
@@ -943,7 +943,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912226290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.06, y: 3.77, z: -0.062326983}
+  m_LocalPosition: {x: 14.46, y: 4.67, z: -0.062326983}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 677403014}
@@ -1842,7 +1842,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1606217992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1858,8 +1858,8 @@ MonoBehaviour:
   Waves:
   - name: Wind enemy
     enemy: {fileID: 4895113962803132703, guid: 534f5d90e2208504eb7792214a808c7c, type: 3}
-    amount: 2
-    rate: 2
+    amount: 1
+    rate: 1
   spawnPoints:
   - {fileID: 399019715}
   waveDelay: 6
@@ -1872,7 +1872,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606217991}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.77, y: 4.16, z: 0}
+  m_LocalPosition: {x: -2.35, y: 5.56, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 399019715}
@@ -2880,17 +2880,17 @@ PrefabInstance:
     - target: {fileID: 8335000822630563271, guid: 10f4e32571c176f4b8a874d7a307551c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.72
       objectReference: {fileID: 0}
     - target: {fileID: 8335000822630563271, guid: 10f4e32571c176f4b8a874d7a307551c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.64
       objectReference: {fileID: 0}
     - target: {fileID: 8335000822630563271, guid: 10f4e32571c176f4b8a874d7a307551c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8335000822630563271, guid: 10f4e32571c176f4b8a874d7a307551c,
         type: 3}
@@ -2940,7 +2940,7 @@ PrefabInstance:
     - target: {fileID: 8335000822630563271, guid: 10f4e32571c176f4b8a874d7a307551c,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 70
+      value: 80
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10f4e32571c176f4b8a874d7a307551c, type: 3}

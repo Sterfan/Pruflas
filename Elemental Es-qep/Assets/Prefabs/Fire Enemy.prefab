@@ -389,8 +389,10 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 0
   healthBar: {fileID: 6740788633768741538}
-  deathAnimation: {fileID: 3201833542030726892, guid: 7c8e60e8ab47f2c488392ec8c7e6a823,
+  deathAnimation: {fileID: 4384832423005269797, guid: 7c8e60e8ab47f2c488392ec8c7e6a823,
     type: 3}
+  dropRate: 0
+  HPdrop: {fileID: 1377815570064674861, guid: 29b89377711d9f34db0af2d264968451, type: 3}
 --- !u!1001 &8626878932786866935
 PrefabInstance:
   m_ObjectHideFlags: 0
