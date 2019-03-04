@@ -45,25 +45,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioFiles:
   - audioName: FireShotTest1
-    audioClip: {fileID: 8300000, guid: 3874215afa4c3f4459bc970d7bce5ae9, type: 3}
-    volume: 1
+    audioClip: {fileID: 8300000, guid: 6ceccfe1840b6814b80f2fd85352368c, type: 3}
+    volume: 0.75
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
   - audioName: WaterShotTest1
-    audioClip: {fileID: 8300000, guid: fe683547444e8254b8040a18c8427533, type: 3}
-    volume: 1
+    audioClip: {fileID: 8300000, guid: 59e6979273c27164e80017b05e700e44, type: 3}
+    volume: 0.75
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
   - audioName: RockShotTest1
-    audioClip: {fileID: 8300000, guid: bd8242690d8624c4182646b790e20b98, type: 3}
-    volume: 1
+    audioClip: {fileID: 8300000, guid: c1d5e4564288653408ed0d28b7007679, type: 3}
+    volume: 0.75
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
   - audioName: WindShotTest1
-    audioClip: {fileID: 8300000, guid: f0807d920e67c2e4f82ffd851823029d, type: 3}
+    audioClip: {fileID: 8300000, guid: a57920dd729449a4f80024997ef70db3, type: 3}
     volume: 1
     source: {fileID: 0}
     isLooping: 0
