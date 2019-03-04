@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class mousePlayerMovement : MonoBehaviour
 {
-    private float moveSpeed = 8f;
+    private float moveSpeed = 7f;
 
 
     void Update()

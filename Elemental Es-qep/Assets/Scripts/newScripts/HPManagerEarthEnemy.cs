@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HPManagerWindEnemy : MonoBehaviour
+public class HPManagerEarthEnemy : MonoBehaviour
 {
-    public int maxHealth = 6;
+    public int maxHealth = 15;
     public int currentHealth;
     public Slider healthBar;
     public GameObject deathAnimation;
-
+    public int  dropRate = 0;
+    public GameObject HPdrop;
     void Start()
     {
         currentHealth = maxHealth;
@@ -23,13 +24,20 @@ public class HPManagerWindEnemy : MonoBehaviour
         if (currentHealth <= 0)
         {
             Instantiate(deathAnimation, transform.position, transform.rotation);
+
             FindObjectOfType<AudioManager>().Play("PlayerExplosion");
+
             Destroy(gameObject);
+
+            if (Random.Range(0, 5) == dropRate)
+            {
+                GameObject pickupdrop = Instantiate(HPdrop, gameObject.transform.position, Quaternion.identity);
+            }
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Earthbullet")
+        if (other.gameObject.tag == "Firebullet")
         {
             currentHealth--;
             FindObjectOfType<AudioManager>().Play("CorrectHit");
@@ -40,6 +48,7 @@ public class HPManagerWindEnemy : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("WrongHit");
         }
     }
+
     public void TakingDamage(int damagetaken)
     {
         currentHealth -= damagetaken;

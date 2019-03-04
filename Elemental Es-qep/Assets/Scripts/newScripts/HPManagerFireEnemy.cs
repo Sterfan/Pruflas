@@ -2,19 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class HPManagerWaterEnemy : MonoBehaviour
+
+public class HPManagerFireEnemy : MonoBehaviour
 {
-    public int maxHealth = 8;
+   [SerializeField]
+    private int maxHealth = 10;
     public int currentHealth;
     public Slider healthBar;
     public GameObject deathAnimation;
+    public int dropRate = 0;
+    public GameObject HPdrop;
 
     void Start()
     {
         currentHealth = maxHealth;
     }
 
-
+    
     void Update()
     {
         healthBar.value = currentHealth;
@@ -22,20 +26,27 @@ public class HPManagerWaterEnemy : MonoBehaviour
         if (currentHealth <= 0)
         {
             Instantiate(deathAnimation, transform.position, transform.rotation);
+
             FindObjectOfType<AudioManager>().Play("PlayerExplosion");
+
             Destroy(gameObject);
+
+            if (Random.Range(0, 5) == dropRate)
+            {
+                GameObject pickupdrop = Instantiate(HPdrop, gameObject.transform.position, Quaternion.identity);
+            }
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Windbullet")
+        if (other.gameObject.tag == "Waterbullet")
         {
             currentHealth--;
             FindObjectOfType<AudioManager>().Play("CorrectHit");
         }
-        else
+        else 
         {
-            currentHealth--;
+            currentHealth --;
             FindObjectOfType<AudioManager>().Play("WrongHit");
         }
     }

@@ -8,7 +8,7 @@ public class Shooting : MonoBehaviour
 
     private float shootingDelay = 0.55f;
     private float cooldownTimer = 0.6f;
-    public  int currentBullet = 0;
+    public static int currentBullet;
     
 
     void Update()
@@ -65,7 +65,7 @@ public class Shooting : MonoBehaviour
 
     //private static void PlayAudio()
     //{
-
+    //
     //    GameObject audManager = GameObject.Find("AudioManager");
     //    AudioManager audManager = audManager.GetComponent<AudioManager>();
     //    FindObjectOfType<AudioManager>().Play("FireShotTest1");

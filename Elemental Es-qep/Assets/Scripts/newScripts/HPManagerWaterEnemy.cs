@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
-public class HPManagerEarthEnemy : MonoBehaviour
+public class HPManagerWaterEnemy : MonoBehaviour
 {
-    public int maxHealth = 15;
+    public int maxHealth = 8;
     public int currentHealth;
     public Slider healthBar;
     public GameObject deathAnimation;
-    public float dropRate = 0.15f;
+    public int dropRate = 0;
     public GameObject HPdrop;
     void Start()
     {
@@ -26,7 +25,8 @@ public class HPManagerEarthEnemy : MonoBehaviour
             Instantiate(deathAnimation, transform.position, transform.rotation);
             FindObjectOfType<AudioManager>().Play("PlayerExplosion");
             Destroy(gameObject);
-            if (Random.Range(0, 1) <= dropRate)
+
+            if (Random.Range(0, 5) == dropRate)
             {
                 GameObject pickupdrop = Instantiate(HPdrop, gameObject.transform.position, Quaternion.identity);
             }
@@ -34,7 +34,7 @@ public class HPManagerEarthEnemy : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Firebullet")
+        if (other.gameObject.tag == "Windbullet")
         {
             currentHealth--;
             FindObjectOfType<AudioManager>().Play("CorrectHit");
