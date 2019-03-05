@@ -2,13 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class PauseMenu : MonoBehaviour
 {
     //[SerializeField]
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
-    // Update is called once per frame
+
+    public EventSystem eventSystem;
+    public GameObject selectedObject;
+
+    private bool buttonSelected;
+
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -22,6 +29,12 @@ public class PauseMenu : MonoBehaviour
             {
                 Pause();
             }
+        }
+
+        if (Input.GetAxisRaw("Vertical") != 0 && buttonSelected == false)
+        {
+            eventSystem.SetSelectedGameObject(selectedObject);
+            buttonSelected = true;
         }
     }
             

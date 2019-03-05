@@ -229,6 +229,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8826983393548707948, guid: 5ab701fee8e02c94d8e7c64d134a3515,
+        type: 3}
+      propertyPath: eventSystem
+      value: 
+      objectReference: {fileID: 478182232}
+    - target: {fileID: 8826983393548707948, guid: 5ab701fee8e02c94d8e7c64d134a3515,
+        type: 3}
+      propertyPath: selectedObject
+      value: 
+      objectReference: {fileID: 816921632}
     - target: {fileID: 8826983393599838729, guid: 5ab701fee8e02c94d8e7c64d134a3515,
         type: 3}
       propertyPath: m_IsActive
@@ -1000,6 +1010,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8871195584730648486, guid: f38e0612e4d64c446aa10dbd99d7a852,
     type: 3}
   m_PrefabInstance: {fileID: 1458829398}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &816921632 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8826983393635556534, guid: 5ab701fee8e02c94d8e7c64d134a3515,
+    type: 3}
+  m_PrefabInstance: {fileID: 108922366}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &855405016
 GameObject:
