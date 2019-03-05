@@ -13,23 +13,36 @@ public class Shooting : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.X))
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+
+        //    FindObjectOfType<AudioManager>().Play("SwitchWeapon");
+
+        //    ++currentBullet;
+
+        //    if (currentBullet+1 > bullets.Length)
+        //    {
+        //        currentBullet = 0;
+        //    }
+        //}
+
+        if (Input.GetMouseButtonDown(1))
         {
 
             FindObjectOfType<AudioManager>().Play("SwitchWeapon");
 
             ++currentBullet;
 
-            if (currentBullet+1 > bullets.Length)
+            if (currentBullet + 1 > bullets.Length)
             {
                 currentBullet = 0;
             }
         }
-        
+
 
         cooldownTimer -= Time.deltaTime;
 
-        if (Input.GetButton("Fire1") && cooldownTimer <= 0) 
+        if (Input.GetButton("Fire3") && cooldownTimer <= 0) 
         {
             cooldownTimer = shootingDelay;
             Debug.Log("Pew!");
