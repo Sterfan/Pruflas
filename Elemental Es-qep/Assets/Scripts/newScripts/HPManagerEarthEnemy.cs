@@ -47,6 +47,12 @@ public class HPManagerEarthEnemy : MonoBehaviour
             currentHealth--;
             FindObjectOfType<AudioManager>().Play("WrongHit");
         }
+
+
+        if (other.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void TakingDamage(int damagetaken)

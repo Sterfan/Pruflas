@@ -8,7 +8,7 @@ public class HealthManagerPlayer : MonoBehaviour
 
     public float  maxHealth = 20f;
     public float  currentHealth;
-    public Slider healthBar;
+    public Image healthBar;
     public GameObject deathAnimation;
 
     void Start()
@@ -19,7 +19,7 @@ public class HealthManagerPlayer : MonoBehaviour
 
     void Update()
     {
-        healthBar.value = currentHealth;
+        healthBar.fillAmount = currentHealth;
 
         if (currentHealth <= 0)
         {
@@ -42,6 +42,12 @@ public class HealthManagerPlayer : MonoBehaviour
         else if (other.gameObject.tag != "HP")
         { 
            currentHealth--;
+        }
+
+
+       if (other.gameObject.tag == "EarthEnemy")
+        {
+            currentHealth -= 5;
         }
 
     }
