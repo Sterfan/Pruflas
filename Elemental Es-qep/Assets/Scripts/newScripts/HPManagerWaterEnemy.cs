@@ -37,7 +37,7 @@ public class HPManagerWaterEnemy : MonoBehaviour
         if (other.gameObject.tag == "Windbullet")
         {
             currentHealth--;
-            FindObjectOfType<AudioManager>().Play("CorrectHit");
+            FindObjectOfType<AudioManager>().Play("WaterHitWithWind");
         }
         else
         {

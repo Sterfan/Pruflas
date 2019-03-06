@@ -13,20 +13,7 @@ public class Shooting : MonoBehaviour
 
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-
-        //    FindObjectOfType<AudioManager>().Play("SwitchWeapon");
-
-        //    ++currentBullet;
-
-        //    if (currentBullet+1 > bullets.Length)
-        //    {
-        //        currentBullet = 0;
-        //    }
-        //}
-
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
 
             FindObjectOfType<AudioManager>().Play("SwitchWeapon");
@@ -38,6 +25,19 @@ public class Shooting : MonoBehaviour
                 currentBullet = 0;
             }
         }
+
+        //if (Input.GetMouseButtonDown(1))
+        //{
+
+        //    FindObjectOfType<AudioManager>().Play("SwitchWeapon");
+
+        //    ++currentBullet;
+
+        //    if (currentBullet + 1 > bullets.Length)
+        //    {
+        //        currentBullet = 0;
+        //    }
+        //}
 
 
         cooldownTimer -= Time.deltaTime;

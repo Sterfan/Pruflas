@@ -42,7 +42,7 @@ public class HPManagerFireEnemy : MonoBehaviour
         if (other.gameObject.tag == "Waterbullet")
         {
             currentHealth--;
-            FindObjectOfType<AudioManager>().Play("CorrectHit");
+            FindObjectOfType<AudioManager>().Play("FireHitWithWater");
         }
         else 
         {

@@ -8,7 +8,7 @@ public class HealthManagerPlayer : MonoBehaviour
 
     public float  maxHealth = 20f;
     public float  currentHealth;
-    public Image healthBar;
+    public Slider healthBar;
     public GameObject deathAnimation;
 
     void Start()
@@ -19,7 +19,7 @@ public class HealthManagerPlayer : MonoBehaviour
 
     void Update()
     {
-        healthBar.fillAmount = currentHealth;
+        healthBar.value = currentHealth;
 
         if (currentHealth <= 0)
         {

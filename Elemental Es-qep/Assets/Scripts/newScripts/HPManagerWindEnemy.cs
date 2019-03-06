@@ -38,7 +38,7 @@ public class HPManagerWindEnemy : MonoBehaviour
         if (other.gameObject.tag == "Earthbullet")
         {
             currentHealth--;
-            FindObjectOfType<AudioManager>().Play("CorrectHit");
+            FindObjectOfType<AudioManager>().Play("WindHitWithEarth");
         }
         else
         {

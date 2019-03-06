@@ -40,7 +40,7 @@ public class HPManagerEarthEnemy : MonoBehaviour
         if (other.gameObject.tag == "Firebullet")
         {
             currentHealth--;
-            FindObjectOfType<AudioManager>().Play("CorrectHit");
+            FindObjectOfType<AudioManager>().Play("EarthHitWithFire");
         }
         else
         {
