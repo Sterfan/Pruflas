@@ -45,26 +45,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioFiles:
   - audioName: FireShotTest1
-    audioClip: {fileID: 8300000, guid: 6ceccfe1840b6814b80f2fd85352368c, type: 3}
+    audioClip: {fileID: 8300000, guid: a6bacf53b003abd4bb7987247fc5b2ad, type: 3}
     volume: 0.75
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
   - audioName: WaterShotTest1
-    audioClip: {fileID: 8300000, guid: 59e6979273c27164e80017b05e700e44, type: 3}
+    audioClip: {fileID: 8300000, guid: ee0ff7a220d15964abc1ade011a8581e, type: 3}
     volume: 0.75
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
   - audioName: RockShotTest1
-    audioClip: {fileID: 8300000, guid: c1d5e4564288653408ed0d28b7007679, type: 3}
+    audioClip: {fileID: 8300000, guid: c480329bfc81f4e45b4ec89ec5f8c6c2, type: 3}
     volume: 0.75
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
   - audioName: WindShotTest1
-    audioClip: {fileID: 8300000, guid: a57920dd729449a4f80024997ef70db3, type: 3}
-    volume: 1
+    audioClip: {fileID: 8300000, guid: e6d4a504fbd81324085950a80722d1b8, type: 3}
+    volume: 0.75
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
@@ -95,6 +95,36 @@ MonoBehaviour:
   - audioName: WrongHit
     audioClip: {fileID: 8300000, guid: 2cf5238bb6dbd08488140290059a306f, type: 3}
     volume: 1
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0
+  - audioName: SwitchWeapon
+    audioClip: {fileID: 8300000, guid: e91f30cb5f2b3df46981b80b3adeb546, type: 3}
+    volume: 1
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0
+  - audioName: EnemyFireShot
+    audioClip: {fileID: 8300000, guid: 82088dba3c9337d409bf9d0c7e4ffff7, type: 3}
+    volume: 0.75
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0
+  - audioName: EnemyWindShot
+    audioClip: {fileID: 8300000, guid: c591b7ea32576c145be6b1a9bff3a14b, type: 3}
+    volume: 0.75
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0
+  - audioName: EnemyWaterShot
+    audioClip: {fileID: 8300000, guid: 4683767b9bf744740a394a0d7f3ebf7f, type: 3}
+    volume: 0.75
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0
+  - audioName: EnemyEarthShot
+    audioClip: {fileID: 8300000, guid: 2759dc1fd55ff974ba91bfd661780d06, type: 3}
+    volume: 0.75
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
