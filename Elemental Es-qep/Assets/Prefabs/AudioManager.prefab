@@ -78,16 +78,10 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 4d026715e672bc54885845bf3e4e0bfa, type: 3}
     volume: 1
     source: {fileID: 0}
-    isLooping: 1
-    playOnAwake: 1
-  - audioName: UpgradeHealth
-    audioClip: {fileID: 8300000, guid: 97639b1e992d3b44585e977c8b605f0d, type: 3}
-    volume: 1
-    source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
-  - audioName: CorrectHit
-    audioClip: {fileID: 8300000, guid: 82b5ed1097f70f54f8fc75190d7cf8fe, type: 3}
+  - audioName: UpgradeHealth
+    audioClip: {fileID: 8300000, guid: 97639b1e992d3b44585e977c8b605f0d, type: 3}
     volume: 1
     source: {fileID: 0}
     isLooping: 0
@@ -152,3 +146,9 @@ MonoBehaviour:
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
+  - audioName: BackgroundAmbiance
+    audioClip: {fileID: 8300000, guid: 57a691f1117eb0044b96ded2b3c0ddec, type: 3}
+    volume: 0.1
+    source: {fileID: 0}
+    isLooping: 1
+    playOnAwake: 1

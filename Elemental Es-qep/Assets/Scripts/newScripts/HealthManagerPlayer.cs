@@ -40,13 +40,15 @@ public class HealthManagerPlayer : MonoBehaviour
         }
 
         else if (other.gameObject.tag != "HP")
-        { 
-           currentHealth--;
+        {
+            Camera.main.GetComponent<ScreenShake>().Shake(0.1f, 0.1f);
+            currentHealth--;
         }
 
 
        if (other.gameObject.tag == "EarthEnemy")
         {
+            Camera.main.GetComponent<ScreenShake>().Shake(0.2f, 0.2f);
             currentHealth -= 5;
         }
 

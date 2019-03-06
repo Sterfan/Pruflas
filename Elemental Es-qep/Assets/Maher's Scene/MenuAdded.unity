@@ -3494,6 +3494,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 141365e7288a8a34e826ed7ea341c62e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventSystem: {fileID: 1222975147}
+  selectedObject: {fileID: 1683049402}
 --- !u!1 &1695157206
 GameObject:
   m_ObjectHideFlags: 0
