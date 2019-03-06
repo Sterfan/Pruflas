@@ -23,7 +23,7 @@ public class HPManagerWaterEnemy : MonoBehaviour
         if (currentHealth <= 0)
         {
             Instantiate(deathAnimation, transform.position, transform.rotation);
-            FindObjectOfType<AudioManager>().Play("PlayerExplosion");
+            //FindObjectOfType<AudioManager>().Play("PlayerExplosion");
             Destroy(gameObject);
 
             if (Random.Range(0, 5) == dropRate)

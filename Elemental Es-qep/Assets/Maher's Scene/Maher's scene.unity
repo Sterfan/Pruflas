@@ -162,7 +162,7 @@ PrefabInstance:
     - target: {fileID: 8826983393548707949, guid: 5ab701fee8e02c94d8e7c64d134a3515,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8826983393548707949, guid: 5ab701fee8e02c94d8e7c64d134a3515,
         type: 3}
@@ -423,7 +423,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -1061,7 +1061,7 @@ RectTransform:
   - {fileID: 265271128}
   - {fileID: 739847176}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1239,7 +1239,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1606217991
 GameObject:
@@ -1444,7 +1444,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897372362}
   m_CullTransparentMesh: 0
---- !u!1001 &2087023605
+--- !u!1001 &2028323711
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1499,7 +1499,7 @@ PrefabInstance:
     - target: {fileID: 837735783403596877, guid: 3779f7db76977ab4983c5cc24da56d72,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 837735783403596877, guid: 3779f7db76977ab4983c5cc24da56d72,
         type: 3}
@@ -1516,46 +1516,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
-        type: 3}
-      propertyPath: audioFiles.Array.size
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
-        type: 3}
-      propertyPath: audioFiles.Array.data[9].audioName
-      value: SwitchWeapon
-      objectReference: {fileID: 0}
-    - target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
-        type: 3}
-      propertyPath: audioFiles.Array.data[9].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: e91f30cb5f2b3df46981b80b3adeb546, type: 3}
-    - target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
-        type: 3}
-      propertyPath: audioFiles.Array.data[9].volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
-        type: 3}
-      propertyPath: audioFiles.Array.data[0].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 6ceccfe1840b6814b80f2fd85352368c, type: 3}
-    - target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
-        type: 3}
-      propertyPath: audioFiles.Array.data[1].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 59e6979273c27164e80017b05e700e44, type: 3}
-    - target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
-        type: 3}
-      propertyPath: audioFiles.Array.data[2].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: c1d5e4564288653408ed0d28b7007679, type: 3}
-    - target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
-        type: 3}
-      propertyPath: audioFiles.Array.data[3].audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: a57920dd729449a4f80024997ef70db3, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3779f7db76977ab4983c5cc24da56d72, type: 3}
 --- !u!1 &2144536157 stripped
@@ -1578,7 +1538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 20
   currentHealth: 0
-  healthBar: {fileID: 739847177}
+  healthBar: {fileID: 0}
   deathAnimation: {fileID: 3201833542030726892, guid: 7c8e60e8ab47f2c488392ec8c7e6a823,
     type: 3}
 --- !u!1001 &982095162969782447

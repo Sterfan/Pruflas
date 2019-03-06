@@ -27,7 +27,7 @@ public class HPManagerFireEnemy : MonoBehaviour
         {
             Instantiate(deathAnimation, transform.position, transform.rotation);
 
-            FindObjectOfType<AudioManager>().Play("PlayerExplosion");
+            //FindObjectOfType<AudioManager>().Play("PlayerExplosion");
 
             Destroy(gameObject);
 

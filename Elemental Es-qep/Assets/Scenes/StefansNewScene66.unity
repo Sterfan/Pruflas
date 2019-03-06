@@ -981,7 +981,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &766529717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1099,7 +1099,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &912226291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1597,7 +1597,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1606217992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1874,6 +1874,22 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7532393907959947341}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2144536158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144536157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e611bde1a491a14e9860a16887c9ff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShipFire: {fileID: 21300000, guid: 0fee3763e3d232a4588de2dc30ddcf50, type: 3}
+  ShipWind: {fileID: 21300000, guid: e1a1256336af36c47a4a632c9be78fbc, type: 3}
+  ShipEarth: {fileID: 21300000, guid: 89757d77e8b4dc74b841a3343961e7e1, type: 3}
+  ShipWater: {fileID: 21300000, guid: 09a3764d11b8fe041aeb14138d756b1b, type: 3}
 --- !u!114 &2144536166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1889,7 +1905,7 @@ MonoBehaviour:
   maxHealth: 20
   currentHealth: 0
   healthBar: {fileID: 1332933400}
-  deathAnimation: {fileID: 3201833542030726892, guid: 7c8e60e8ab47f2c488392ec8c7e6a823,
+  deathAnimation: {fileID: 4384832423005269797, guid: 7c8e60e8ab47f2c488392ec8c7e6a823,
     type: 3}
 --- !u!1001 &982095162969782447
 PrefabInstance:
@@ -2180,6 +2196,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 6222577411844861842, guid: edbd5cf9a00f65646af40dbb7c1762ba,
+        type: 3}
+      propertyPath: yVelocity
+      value: 0.0075
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edbd5cf9a00f65646af40dbb7c1762ba, type: 3}
 --- !u!1001 &7435890533435595683
@@ -2456,6 +2477,17 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7532393906774372651, guid: 36b19cd676dd7c24992462daf5a7d2cc,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0fee3763e3d232a4588de2dc30ddcf50,
+        type: 3}
+    - target: {fileID: 7532393906774372651, guid: 36b19cd676dd7c24992462daf5a7d2cc,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36b19cd676dd7c24992462daf5a7d2cc, type: 3}
 --- !u!1001 &8270321591149261715
@@ -2535,6 +2567,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 120
       objectReference: {fileID: 0}
+    - target: {fileID: 8270321590967118265, guid: 686e5837304cb7448b79667a3dfdfb2d,
+        type: 3}
+      propertyPath: yVelocity
+      value: 0.04
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 686e5837304cb7448b79667a3dfdfb2d, type: 3}
 --- !u!1001 &8335000821339211157
@@ -2557,12 +2594,12 @@ PrefabInstance:
     - target: {fileID: 8335000822630563271, guid: 10f4e32571c176f4b8a874d7a307551c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.64
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8335000822630563271, guid: 10f4e32571c176f4b8a874d7a307551c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8335000822630563271, guid: 10f4e32571c176f4b8a874d7a307551c,
         type: 3}
@@ -2607,12 +2644,17 @@ PrefabInstance:
     - target: {fileID: 8335000822630563271, guid: 10f4e32571c176f4b8a874d7a307551c,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 20
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8335000822630563271, guid: 10f4e32571c176f4b8a874d7a307551c,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 80
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8335000822630563271, guid: 10f4e32571c176f4b8a874d7a307551c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10f4e32571c176f4b8a874d7a307551c, type: 3}

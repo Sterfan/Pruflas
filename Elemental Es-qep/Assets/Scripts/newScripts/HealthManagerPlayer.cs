@@ -26,8 +26,9 @@ public class HealthManagerPlayer : MonoBehaviour
             Destroy(gameObject);
             Instantiate(deathAnimation, transform.position, transform.rotation);
 
-            FindObjectOfType<AudioManager>().Play("PlayerExplosion");
-            //yield return new WaitForSeconds(5);
+            FindObjectOfType<AudioManager>().Play("PlayerDeath");
+            //FindObjectOfType<AudioManager>().Play("PlayerExplosion");
+            //yield return new WaitForSeconds(FindObjectOfType<AudioManager>("PlayerExplosion"));
             Application.LoadLevel(Application.loadedLevel);
         }
     }
