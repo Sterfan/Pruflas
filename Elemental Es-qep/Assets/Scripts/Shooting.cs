@@ -59,21 +59,21 @@ public class Shooting : MonoBehaviour
             if (currentBullet == 1)
             {
 
-                FindObjectOfType<AudioManager>().Play("WaterShotTest1");
+                FindObjectOfType<AudioManager>().Play("RockShotTest1");
 
             }
 
             if (currentBullet == 2)
             {
 
-                FindObjectOfType<AudioManager>().Play("RockShotTest1");
+                FindObjectOfType<AudioManager>().Play("WindShotTest1");
 
             }
 
             if (currentBullet == 3)
             {
 
-                FindObjectOfType<AudioManager>().Play("WindShotTest1");
+                FindObjectOfType<AudioManager>().Play("WaterShotTest1");
 
             }
         }
