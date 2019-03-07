@@ -7,8 +7,8 @@ public class PlayerColorChange : MonoBehaviour
 
     private SpriteRenderer spriteRenderer; 
     public Sprite ShipFire;
-    public Sprite ShipWind;
     public Sprite ShipEarth;
+    public Sprite ShipWind;
     public Sprite ShipWater;
     int spriteVersion = 0;
 
@@ -20,8 +20,8 @@ public class PlayerColorChange : MonoBehaviour
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
 
         sprites[0] = ShipFire;
-        sprites[1] = ShipWind;
-        sprites[2] = ShipEarth;
+        sprites[1] = ShipEarth;
+        sprites[2] = ShipWind;
         sprites[3] = ShipWater;
 
     }

@@ -6,8 +6,9 @@ public class DeleteBullet : MonoBehaviour
 {
 
     float deleteTime = 2f;
-    public GameObject flishFlash;
-
+    public GameObject bulletExplosion;
+    //public int offset.x; 
+    //public int offset.y;
 
     void Start()
     {
@@ -18,10 +19,10 @@ public class DeleteBullet : MonoBehaviour
     private void OnTriggerEnter2D()
     {
         Vector2 offset = transform.position;
-        offset.x += 0.4f;
-        offset.y += 0.5f;
+        offset.x += 0.23f;
+        offset.y += 0.27f;
 
-        Instantiate(flishFlash, offset, transform.rotation);
+        Instantiate(bulletExplosion, offset, transform.rotation);
         Destroy(gameObject);
     }
 
