@@ -11,6 +11,7 @@ public class HPManagerEarthEnemy : MonoBehaviour
     public GameObject deathAnimation;
     public int  dropRate = 0;
     public GameObject HPdrop;
+    public GameObject earthRam;
     void Start()
     {
         currentHealth = maxHealth;
@@ -44,13 +45,14 @@ public class HPManagerEarthEnemy : MonoBehaviour
         }
         else
         {
-            currentHealth--;
+            //currentHealth--;
             FindObjectOfType<AudioManager>().Play("WrongHit");
         }
 
 
         if (other.gameObject.tag == "Player")
         {
+            Instantiate(earthRam, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }

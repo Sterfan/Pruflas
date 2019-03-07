@@ -41,7 +41,7 @@ public class HPManagerWaterEnemy : MonoBehaviour
         }
         else
         {
-            currentHealth--;
+            //currentHealth--;
             FindObjectOfType<AudioManager>().Play("WrongHit");
         }
     }

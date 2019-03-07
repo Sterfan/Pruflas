@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5094451258642024944}
   - component: {fileID: 8716097294596050849}
   m_Layer: 10
-  m_Name: EarthBullet
+  m_Name: Earthbullet
   m_TagString: Earthbullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -180,3 +180,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd7fa16a41d61cd47aaa883696c60151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletExplosion: {fileID: 8541395479578707205, guid: d3009fe3a41e8de499b402c801ba5b5c,
+    type: 3}

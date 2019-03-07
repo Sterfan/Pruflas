@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 908339132185380885}
   - component: {fileID: 942748223738946775}
   m_Layer: 10
-  m_Name: WaterBullet
+  m_Name: Waterbullet
   m_TagString: Waterbullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -162,6 +162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd7fa16a41d61cd47aaa883696c60151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletExplosion: {fileID: 1668735679316099811, guid: cd9a5f5eee634c542b31b624f49be22a,
+    type: 3}
 --- !u!114 &908339132185380885
 MonoBehaviour:
   m_ObjectHideFlags: 0

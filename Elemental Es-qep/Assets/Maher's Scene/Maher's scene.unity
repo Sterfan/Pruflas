@@ -313,7 +313,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 575ad086f17889047b07d2d41d20a62e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 87a6e7bbb17e3084bb30304a23dd9ec0, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -465,10 +465,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSprites:
-  - {fileID: 21300000, guid: 50691d9a31a0af540a2fda2565e4374c, type: 3}
-  - {fileID: 21300000, guid: dca9301309725404cb847a7c99175fd9, type: 3}
-  - {fileID: 21300000, guid: 592adf63733b444499c499cb15853616, type: 3}
-  - {fileID: 21300000, guid: 34a06e28a55a3b44e9c409297903d524, type: 3}
+  - {fileID: 21300000, guid: 1d5135c2c42ad1f47a561dabef8c3328, type: 3}
+  - {fileID: 21300000, guid: 8cb3aadf51446c540bcda8a74d5b01af, type: 3}
+  - {fileID: 21300000, guid: 4dca611f90680c142b2bd8c02e9d72f4, type: 3}
+  - {fileID: 21300000, guid: cf89f4ba59644e648bb5aa3ae2d20580, type: 3}
   BulletUI: {fileID: 265271129}
 --- !u!20 &519420031
 Camera:

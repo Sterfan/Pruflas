@@ -42,7 +42,7 @@ public class HPManagerWindEnemy : MonoBehaviour
         }
         else
         {
-            currentHealth--;
+            //currentHealth--;
             FindObjectOfType<AudioManager>().Play("WrongHit");
         }
     }

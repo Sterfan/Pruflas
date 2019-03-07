@@ -46,7 +46,7 @@ public class HPManagerFireEnemy : MonoBehaviour
         }
         else 
         {
-            currentHealth --;
+            //currentHealth --;
             FindObjectOfType<AudioManager>().Play("WrongHit");
         }
     }
