@@ -32,5 +32,9 @@ public class WindMovement : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, Player.position, -moveSpeed * Time.deltaTime);
         }
+        //else if (GameObject.FindGameObjectWithTag("Player") == null)
+        //{
+        //    transform.position = Vector2.MoveTowards(transform.position, 3, 0f);
+        //}
     }
 }

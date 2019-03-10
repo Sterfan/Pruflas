@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthManagerPlayer : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class HealthManagerPlayer : MonoBehaviour
     public float  currentHealth;
     public Slider healthBar;
     public GameObject deathAnimation;
+    public Animator animator;
+
 
     void Start()
     {
@@ -27,12 +30,19 @@ public class HealthManagerPlayer : MonoBehaviour
             Instantiate(deathAnimation, transform.position, transform.rotation);
 
             FindObjectOfType<AudioManager>().Play("PlayerDeath");
-            //FindObjectOfType<AudioManager>().Play("PlayerExplosion");
-            //yield return new WaitForSeconds(FindObjectOfType<AudioManager>("PlayerExplosion"));
-            Application.LoadLevel(Application.loadedLevel);
+            //animator.SetTrigger("FadeOut");
+
         }
     }
-     void OnTriggerEnter2D(Collider2D other)
+
+    //public void OnFadeComplete()
+    //{
+
+    //    animator.SetTrigger("FasdeIn");
+
+    //}
+
+    void OnTriggerEnter2D(Collider2D other)
     {
         
        if (other.gameObject.tag == "HP")
