@@ -31,11 +31,11 @@ public class PauseMenu : MonoBehaviour
             }
         }
 
-        if (Input.GetAxisRaw("Vertical") != 0 && buttonSelected == false)
-        {
-            eventSystem.SetSelectedGameObject(selectedObject);
-            buttonSelected = true;
-        }
+        //if (Input.GetAxisRaw("Vertical") != 0 && buttonSelected == false)
+        //{
+        //    eventSystem.SetSelectedGameObject(selectedObject);
+        //    buttonSelected = true;
+        //}
     }
             
            public void Resume()

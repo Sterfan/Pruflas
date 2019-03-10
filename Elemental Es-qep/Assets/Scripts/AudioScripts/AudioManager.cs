@@ -20,6 +20,14 @@ public class AudioManager : MonoBehaviour
 
     private bool isLowered = false;
 
+    private bool fadeOut = false;
+
+    private bool fadeIn = false;
+
+    private string fadeInUsedString;
+
+    private string fadeOutUsedString;
+
     void Awake()
     {
         if (instance == null)
@@ -183,6 +191,131 @@ public class AudioManager : MonoBehaviour
             instance.isLowered = true;
 
         }
+    }
+
+    public static void FadeOut(string name, float duration)
+    {
+
+        instance.StartCoroutine(instance.IFadeOut(name, duration));
+
+    }
+
+    public static void FadeIn(string name, float targetVolume, float duration)
+    {
+
+        instance.StartCoroutine(instance.IFadeIn(name, targetVolume, duration));
+
+    }
+
+    //not for use ??
+    private IEnumerator IFadeOut(string name, float duration)
+    {
+
+        AudioFile s = Array.Find(instance.audioFiles, AudioFile => AudioFile.audioName == name);
+
+        if (s == null)
+        {
+
+            Debug.LogError("Sound name" + name + "not found!");
+            yield return null;
+
+        }
+
+        else
+        {
+
+            if (fadeOut == false)
+            {
+
+                fadeOut = true;
+
+                float startVol = s.source.volume;
+
+                fadeOutUsedString = name;
+
+                while (s.source.volume > 0)
+                {
+
+                    s.source.volume -= startVol * Time.deltaTime / duration;
+                    yield return null;
+
+                }
+
+                s.source.Stop();
+
+                yield return new WaitForSeconds(duration);
+
+                fadeOut = false;
+
+            }
+
+            else
+            {
+
+                Debug.LogError("Could not handle two fade outs at once : " + name + " , " + fadeOutUsedString + "! Stopped the music " + name);
+
+                StopMusic(name);
+
+            }
+
+        }
+
+    }
+
+    private IEnumerator IFadeIn(string name, float targetVolume, float duration)
+    {
+
+        AudioFile s = Array.Find(instance.audioFiles, AudioFile => AudioFile.audioName == name);
+
+        if (s == null)
+        {
+
+            Debug.LogError("Sound name" + name + "not found!");
+            yield return null;
+
+        }
+
+        else
+        {
+
+            if (fadeIn == false)
+            {
+
+                fadeIn = true;
+
+                instance.fadeInUsedString = name;
+
+                s.source.volume = 0f;
+
+                s.source.Play();
+
+                while (s.source.volume < targetVolume)
+                {
+
+                    s.source.volume += Time.deltaTime / duration;
+                    yield return null;
+
+                }
+
+                yield return new WaitForSeconds(duration);
+
+                fadeIn = false;
+
+            }
+
+            else
+            {
+
+                Debug.LogError("Could not handle two fade ins at once : " + name + " , " + fadeInUsedString + "! Played the music " + name);
+
+                StopMusic(fadeInUsedString);
+
+                Play(name);
+
+            }
+
+        }
+
     }
 
     void ResetVol()

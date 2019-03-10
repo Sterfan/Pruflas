@@ -3,25 +3,61 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using System;
 
 public class MainMenu : MonoBehaviour
 {
     private bool buttonSelected;
     public EventSystem eventSystem;
     public GameObject selectedObject;
+    public Animator animator;
+
+    private void Start()
+    {
+
+        FindObjectOfType<AudioManager>().Play("TitleTheme");
+
+        StartCoroutine(Wait());
+
+    }
+
+    IEnumerator Wait()
+    {
+
+        yield return new WaitForSeconds(6.865f);
+
+        FindObjectOfType<AudioManager>().Play("TitleTheme2");
+
+    }
 
     private void Update()
     {
-        if (Input.GetAxisRaw("Vertical") != 0 && buttonSelected == false)
-        {
-            eventSystem.SetSelectedGameObject(selectedObject);
-            buttonSelected = true;
-        }
+        //if (Input.GetAxisRaw("Vertical") != 0 && buttonSelected == false)
+        //{
+        //    eventSystem.SetSelectedGameObject(selectedObject);
+        //    buttonSelected = true;
+        //}
+
+        //FindObjectOfType<AudioManager>().Play("TitleTheme");
+    }
+
+    //public void PlayGame()
+    //{
+
+    //    animator.SetTrigger("FadeOut");
+
+    //}
+
+    public void OnFadeComplete()
+    {
+
+        SceneManager.LoadScene("Maher's scene");
+
     }
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("Maher's scene"); 
+        animator.SetTrigger("FadeOut");
     }
 
     public void QuitGame()
