@@ -2125,7 +2125,6 @@ MonoBehaviour:
   healthBar: {fileID: 118484468}
   deathAnimation: {fileID: 4384832423005269797, guid: 7c8e60e8ab47f2c488392ec8c7e6a823,
     type: 3}
-  animator: {fileID: 0}
 --- !u!1001 &73565910961683389
 PrefabInstance:
   m_ObjectHideFlags: 0
