@@ -1,15 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-
-public class HPManagerBoss : MonoBehaviour
+public class BossShieldHPManager : MonoBehaviour
 {
     [SerializeField]
-    private int maxHealth = 20;
+    private int maxHealth = 30;
     public int currentHealth;
-    public Slider healthBar;
+    
 
     void Start()
     {
@@ -17,13 +15,13 @@ public class HPManagerBoss : MonoBehaviour
     }
 
 
-    
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "PlayerBullet")
         {
             currentHealth--;
-            
+
         }
 
     }
@@ -36,9 +34,5 @@ public class HPManagerBoss : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-    public void TakingDamage(int damagetaken)
-    {
-        currentHealth -= damagetaken;
     }
 }

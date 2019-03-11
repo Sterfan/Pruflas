@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7532393906774372654}
   - component: {fileID: 7532393906774372655}
   - component: {fileID: 5577884677286817421}
-  - component: {fileID: 8939447422068820007}
+  - component: {fileID: 1530670453998372598}
   - component: {fileID: 7532393906774372644}
   - component: {fileID: 7532393906774372645}
   m_Layer: 9
@@ -123,10 +123,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullets:
-  - {fileID: 4237654345070086541, guid: 4f0f96146f7c3ac409ea84f18882d320, type: 3}
-  - {fileID: 6605548369827352722, guid: 14b5c54d3336f4c4a825895c3595fa52, type: 3}
-  - {fileID: 7797463192280951499, guid: e3775571294504342a0aa4aa522d64a9, type: 3}
-  - {fileID: 6239117726924804832, guid: 0f3a55a581da4c04aa9834385c7c558d, type: 3}
+  - {fileID: 1399913604434338030, guid: 7572afcb82b2bc247a9fe66865e9e38f, type: 3}
+  - {fileID: 1871735903693358010, guid: 0f3a55a581da4c04aa9834385c7c558d, type: 3}
+  - {fileID: 6295074979412082892, guid: 4f0f96146f7c3ac409ea84f18882d320, type: 3}
+  - {fileID: 3932303284118213142, guid: 14b5c54d3336f4c4a825895c3595fa52, type: 3}
 --- !u!114 &5577884677286817421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,20 +139,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d56d9c760cca9d8479e779cab023cb73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8939447422068820007
+--- !u!114 &1530670453998372598
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7532393906774372652}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1317f67dd101c604a869a358104cb0db, type: 3}
+  m_Script: {fileID: 11500000, guid: 692c11b10fe1b16448adba1243b7b9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7
-  rotationSpeed: 240
+  maxHealth: 20
+  currentHealth: 0
+  healthBar: {fileID: 0}
+  deathAnimation: {fileID: 0}
 --- !u!50 &7532393906774372644
 Rigidbody2D:
   serializedVersion: 4

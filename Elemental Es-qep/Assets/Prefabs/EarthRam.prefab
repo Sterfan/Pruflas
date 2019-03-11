@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8543282085069186310}
   - component: {fileID: 8194891683681731849}
   - component: {fileID: 7642235911276645504}
+  - component: {fileID: 6293488192172481846}
   m_Layer: 0
   m_Name: EarthRam
   m_TagString: Untagged
@@ -99,3 +100,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6293488192172481846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325602982145007536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a1d7fb0d50ff2e40a7473b175eca4d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -35,6 +35,11 @@ public class HPManagerEarthEnemy : MonoBehaviour
                 GameObject pickupdrop = Instantiate(HPdrop, gameObject.transform.position, Quaternion.identity);
             }
         }
+
+        if (GameObject.FindGameObjectWithTag ("Player") == null )
+        {
+            Destroy(gameObject);
+        }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

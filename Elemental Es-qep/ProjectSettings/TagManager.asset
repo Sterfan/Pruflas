@@ -23,6 +23,7 @@ TagManager:
   - WaterEnemybullet
   - HP
   - UI
+  - Detection
   layers:
   - Default
   - TransparentFX
@@ -38,8 +39,8 @@ TagManager:
   - Background
   - Enemybullet
   - HP
-  - 
-  - 
+  - Boss
+  - nocollision
   - 
   - 
   - 

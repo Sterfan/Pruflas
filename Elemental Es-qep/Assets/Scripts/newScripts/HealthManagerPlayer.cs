@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthManagerPlayer : MonoBehaviour
 {
@@ -29,8 +30,12 @@ public class HealthManagerPlayer : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("PlayerDeath");
             //FindObjectOfType<AudioManager>().Play("PlayerExplosion");
             //yield return new WaitForSeconds(FindObjectOfType<AudioManager>("PlayerExplosion"));
-            Application.LoadLevel(Application.loadedLevel);
+           
         }
+        //if (GameObject.FindGameObjectWithTag("Player") == null)
+        //{
+        //    SceneManager.LoadScene("MenuAdded");
+        //}
     }
      void OnTriggerEnter2D(Collider2D other)
     {
