@@ -11,6 +11,8 @@ public class HealthManagerPlayer : MonoBehaviour
     public float  currentHealth;
     public Slider healthBar;
     public GameObject deathAnimation;
+    public Animator animator;
+
 
     void Start()
     {
@@ -28,16 +30,29 @@ public class HealthManagerPlayer : MonoBehaviour
             Instantiate(deathAnimation, transform.position, transform.rotation);
 
             FindObjectOfType<AudioManager>().Play("PlayerDeath");
+<<<<<<< HEAD
             //FindObjectOfType<AudioManager>().Play("PlayerExplosion");
             //yield return new WaitForSeconds(FindObjectOfType<AudioManager>("PlayerExplosion"));
            
+=======
+            //animator.SetTrigger("FadeOut");
+
+>>>>>>> master
         }
         //if (GameObject.FindGameObjectWithTag("Player") == null)
         //{
         //    SceneManager.LoadScene("MenuAdded");
         //}
     }
-     void OnTriggerEnter2D(Collider2D other)
+
+    //public void OnFadeComplete()
+    //{
+
+    //    animator.SetTrigger("FasdeIn");
+
+    //}
+
+    void OnTriggerEnter2D(Collider2D other)
     {
         
        if (other.gameObject.tag == "HP")
