@@ -34,5 +34,12 @@ public class GameAudio : MonoBehaviour
 
         }
 
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+
+            SceneManager.LoadScene("Boss");
+
+        }
+
     }
 }

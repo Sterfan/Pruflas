@@ -46,31 +46,31 @@ MonoBehaviour:
   audioFiles:
   - audioName: FireShotTest1
     audioClip: {fileID: 8300000, guid: a6bacf53b003abd4bb7987247fc5b2ad, type: 3}
-    volume: 0.75
+    volume: 0.3
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
   - audioName: WaterShotTest1
     audioClip: {fileID: 8300000, guid: ee0ff7a220d15964abc1ade011a8581e, type: 3}
-    volume: 0.75
+    volume: 0.3
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
   - audioName: RockShotTest1
     audioClip: {fileID: 8300000, guid: c480329bfc81f4e45b4ec89ec5f8c6c2, type: 3}
-    volume: 0.75
+    volume: 0.3
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
   - audioName: WindShotTest1
     audioClip: {fileID: 8300000, guid: e6d4a504fbd81324085950a80722d1b8, type: 3}
-    volume: 0.75
+    volume: 0.3
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
   - audioName: PlayerExplosion
     audioClip: {fileID: 8300000, guid: 2cf5238bb6dbd08488140290059a306f, type: 3}
-    volume: 1
+    volume: 0.6
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
@@ -82,73 +82,73 @@ MonoBehaviour:
     playOnAwake: 0
   - audioName: UpgradeHealth
     audioClip: {fileID: 8300000, guid: 97639b1e992d3b44585e977c8b605f0d, type: 3}
-    volume: 1
+    volume: 0.5
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
   - audioName: WrongHit
     audioClip: {fileID: 8300000, guid: 55d581f466cc43d4e9e18b206c3b96c9, type: 3}
-    volume: 1
+    volume: 0.5
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
   - audioName: SwitchWeapon
     audioClip: {fileID: 8300000, guid: e91f30cb5f2b3df46981b80b3adeb546, type: 3}
-    volume: 1
+    volume: 0.75
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
   - audioName: EnemyFireShot
     audioClip: {fileID: 8300000, guid: 82088dba3c9337d409bf9d0c7e4ffff7, type: 3}
-    volume: 0.75
+    volume: 0.25
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
   - audioName: EnemyWindShot
     audioClip: {fileID: 8300000, guid: c591b7ea32576c145be6b1a9bff3a14b, type: 3}
-    volume: 0.75
+    volume: 0.25
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
   - audioName: EnemyWaterShot
     audioClip: {fileID: 8300000, guid: 4683767b9bf744740a394a0d7f3ebf7f, type: 3}
-    volume: 0.75
+    volume: 0.25
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
   - audioName: EnemyEarthShot
     audioClip: {fileID: 8300000, guid: 2759dc1fd55ff974ba91bfd661780d06, type: 3}
-    volume: 0.75
+    volume: 0.25
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
   - audioName: FireHitWithWater
     audioClip: {fileID: 8300000, guid: 990e0d28ff6835248bd5aaa9b9bad27c, type: 3}
-    volume: 0.75
+    volume: 0.5
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
   - audioName: WaterHitWithWind
     audioClip: {fileID: 8300000, guid: ff686da41ae749e49b4b15cb661a2d6a, type: 3}
-    volume: 0.75
+    volume: 0.5
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
   - audioName: WindHitWithEarth
     audioClip: {fileID: 8300000, guid: ad18c9e130c50174cadeee29ee4692bc, type: 3}
-    volume: 0.75
+    volume: 0.5
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
   - audioName: EarthHitWithFire
     audioClip: {fileID: 8300000, guid: e0db78ec2e654b14cb722e5798869fe2, type: 3}
-    volume: 0.75
+    volume: 0.5
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
   - audioName: BackgroundAmbiance
     audioClip: {fileID: 8300000, guid: 57a691f1117eb0044b96ded2b3c0ddec, type: 3}
-    volume: 0.1
+    volume: 0.009
     source: {fileID: 0}
     isLooping: 1
     playOnAwake: 0
@@ -166,7 +166,7 @@ MonoBehaviour:
     playOnAwake: 0
   - audioName: PlayerDeath
     audioClip: {fileID: 8300000, guid: 8ce78f497e51be24abef2a40be0b7511, type: 3}
-    volume: 0.75
+    volume: 0.6
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
@@ -184,7 +184,7 @@ MonoBehaviour:
     playOnAwake: 0
   - audioName: StartButton
     audioClip: {fileID: 8300000, guid: e9ebbaf72a8bae846843d990d10de5f4, type: 3}
-    volume: 0.3
+    volume: 0.25
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0

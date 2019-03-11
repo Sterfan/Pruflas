@@ -11,12 +11,13 @@ public class HealthManagerPlayer : MonoBehaviour
     public float  currentHealth;
     public Slider healthBar;
     public GameObject deathAnimation;
-    public Animator animator;
 
+    public static bool playerAlive;
 
     void Start()
     {
         currentHealth = maxHealth;
+        playerAlive = true;
     }
 
 
@@ -26,12 +27,15 @@ public class HealthManagerPlayer : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            playerAlive = false;
+
             Destroy(gameObject);
-            Application.LoadLevel(Application.loadedLevel);
+            
             Instantiate(deathAnimation, transform.position, transform.rotation);
 
             FindObjectOfType<AudioManager>().Play("PlayerDeath");
         }
+
     }
 
     //public void OnFadeComplete()
