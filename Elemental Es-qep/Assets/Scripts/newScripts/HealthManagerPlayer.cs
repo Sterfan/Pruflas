@@ -27,22 +27,11 @@ public class HealthManagerPlayer : MonoBehaviour
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
+            Application.LoadLevel(Application.loadedLevel);
             Instantiate(deathAnimation, transform.position, transform.rotation);
 
             FindObjectOfType<AudioManager>().Play("PlayerDeath");
-<<<<<<< HEAD
-            //FindObjectOfType<AudioManager>().Play("PlayerExplosion");
-            //yield return new WaitForSeconds(FindObjectOfType<AudioManager>("PlayerExplosion"));
-           
-=======
-            //animator.SetTrigger("FadeOut");
-
->>>>>>> master
         }
-        //if (GameObject.FindGameObjectWithTag("Player") == null)
-        //{
-        //    SceneManager.LoadScene("MenuAdded");
-        //}
     }
 
     //public void OnFadeComplete()
