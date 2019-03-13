@@ -1003,7 +1003,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766529716}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.41, y: 2.46, z: -0.062326983}
+  m_LocalPosition: {x: -5.13, y: 1.91, z: -0.062326983}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 774465950}
@@ -1063,7 +1063,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855405016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.66, y: 3.82, z: -0.062326983}
+  m_LocalPosition: {x: 6.35, y: 3.39, z: -0.062326983}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 405935234}
@@ -1128,7 +1128,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 912226290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.46, y: 4.67, z: -0.062326983}
+  m_LocalPosition: {x: 1.54, y: 6.39, z: -0.062326983}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 677403014}
@@ -1862,7 +1862,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606217991}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.35, y: 5.56, z: 0}
+  m_LocalPosition: {x: -9.11, y: 6.79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 399019715}
@@ -1890,12 +1890,12 @@ PrefabInstance:
     - target: {fileID: 8871195584730648486, guid: f38e0612e4d64c446aa10dbd99d7a852,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.43
+      value: -0.68
       objectReference: {fileID: 0}
     - target: {fileID: 8871195584730648486, guid: f38e0612e4d64c446aa10dbd99d7a852,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.01
+      value: 0.21
       objectReference: {fileID: 0}
     - target: {fileID: 8871195584730648486, guid: f38e0612e4d64c446aa10dbd99d7a852,
         type: 3}
@@ -2505,6 +2505,33 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1530670453998372598, guid: 36b19cd676dd7c24992462daf5a7d2cc,
+        type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 888778090}
+    - target: {fileID: 1530670453998372598, guid: 36b19cd676dd7c24992462daf5a7d2cc,
+        type: 3}
+      propertyPath: deathAnimation
+      value: 
+      objectReference: {fileID: 4384832423005269797, guid: 7c8e60e8ab47f2c488392ec8c7e6a823,
+        type: 3}
+    - target: {fileID: 8939447422068820007, guid: 36b19cd676dd7c24992462daf5a7d2cc,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8939447422068820007, guid: 36b19cd676dd7c24992462daf5a7d2cc,
+        type: 3}
+      propertyPath: rotSpeed
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 7532393906774372651, guid: 36b19cd676dd7c24992462daf5a7d2cc,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0fee3763e3d232a4588de2dc30ddcf50,
+        type: 3}
     - target: {fileID: 7532393906774372648, guid: 36b19cd676dd7c24992462daf5a7d2cc,
         type: 3}
       propertyPath: m_Enabled
@@ -2573,16 +2600,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8939447422068820007, guid: 36b19cd676dd7c24992462daf5a7d2cc,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8939447422068820007, guid: 36b19cd676dd7c24992462daf5a7d2cc,
-        type: 3}
-      propertyPath: rotSpeed
-      value: 200
-      objectReference: {fileID: 0}
     - target: {fileID: 4748130035636149967, guid: 36b19cd676dd7c24992462daf5a7d2cc,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2633,23 +2650,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7532393906774372651, guid: 36b19cd676dd7c24992462daf5a7d2cc,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 0fee3763e3d232a4588de2dc30ddcf50,
-        type: 3}
-    - target: {fileID: 1530670453998372598, guid: 36b19cd676dd7c24992462daf5a7d2cc,
-        type: 3}
-      propertyPath: healthBar
-      value: 
-      objectReference: {fileID: 888778090}
-    - target: {fileID: 1530670453998372598, guid: 36b19cd676dd7c24992462daf5a7d2cc,
-        type: 3}
-      propertyPath: deathAnimation
-      value: 
-      objectReference: {fileID: 4384832423005269797, guid: 7c8e60e8ab47f2c488392ec8c7e6a823,
-        type: 3}
     m_RemovedComponents:
     - {fileID: 8939447422068820007, guid: 36b19cd676dd7c24992462daf5a7d2cc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36b19cd676dd7c24992462daf5a7d2cc, type: 3}
