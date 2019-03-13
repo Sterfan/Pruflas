@@ -26,6 +26,7 @@ public class AudioManager : MonoBehaviour
 
     private string fadeInUsedString;
 
+    public AudioMixer Mixer; 
     private string fadeOutUsedString;
 
     void Awake()
