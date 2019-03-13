@@ -55,7 +55,7 @@ public class HealthManagerPlayer : MonoBehaviour
 
         else if (other.gameObject.tag != "HP")
         {
-            Camera.main.GetComponent<ScreenShake>().Shake(0.1f, 0.1f);
+            //Camera.main.GetComponent<ScreenShake>().Shake(0.1f, 0.1f);
             currentHealth--;
         }
 

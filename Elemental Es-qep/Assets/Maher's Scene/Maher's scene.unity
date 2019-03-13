@@ -785,10 +785,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSprites:
-  - {fileID: 21300000, guid: 1d5135c2c42ad1f47a561dabef8c3328, type: 3}
-  - {fileID: 21300000, guid: 8cb3aadf51446c540bcda8a74d5b01af, type: 3}
-  - {fileID: 21300000, guid: 4dca611f90680c142b2bd8c02e9d72f4, type: 3}
-  - {fileID: 21300000, guid: cf89f4ba59644e648bb5aa3ae2d20580, type: 3}
+  - {fileID: 21300000, guid: 8614fb57169eef14fbd69d3dd52359c6, type: 3}
+  - {fileID: 21300000, guid: c7859f1ecc899b84f8b16c8c5f6cc8c1, type: 3}
+  - {fileID: 21300000, guid: c89e6eabe0390464abf71a419845555a, type: 3}
+  - {fileID: 21300000, guid: a8fe6d2897133fa4f9ed6d1f4644a4a4, type: 3}
   BulletUI: {fileID: 1122662100}
 --- !u!20 &519420031
 Camera:
@@ -1098,7 +1098,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &912226291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1409,6 +1409,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004860909046676860, guid: a7f3bd219c711a74ebad131acef26c47,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004860909046676860, guid: a7f3bd219c711a74ebad131acef26c47,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -211
       objectReference: {fileID: 0}
     - target: {fileID: 1004860909632318676, guid: a7f3bd219c711a74ebad131acef26c47,
         type: 3}
