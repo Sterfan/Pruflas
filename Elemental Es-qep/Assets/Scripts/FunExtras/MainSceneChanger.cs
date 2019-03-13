@@ -17,11 +17,12 @@ public class MainSceneChanger : MonoBehaviour
 
     void Update()
     {
-        //if (HealthManagerPlayer.playerAlive == false)
-        //{
-        //    animator.SetTrigger("PlayerDead");
-        //}
+        if(HealthManagerPlayer.playerAlive == false)
+        {
 
+            animator.SetTrigger("PlayerDead");
+
+        }
     }
 
     //HealthManagerPlayer.playerAlive == false

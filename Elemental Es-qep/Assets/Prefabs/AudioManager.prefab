@@ -148,7 +148,7 @@ MonoBehaviour:
     playOnAwake: 0
   - audioName: BackgroundAmbiance
     audioClip: {fileID: 8300000, guid: 57a691f1117eb0044b96ded2b3c0ddec, type: 3}
-    volume: 0.009
+    volume: 0.1
     source: {fileID: 0}
     isLooping: 1
     playOnAwake: 0

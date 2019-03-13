@@ -27,6 +27,13 @@ public class GameAudio : MonoBehaviour
     private void Update()
     {
 
+        if (HealthManagerPlayer.playerAlive == false)
+        {
+
+            FindObjectOfType<AudioManager>().StopMusic("BackgroundAmbiance");
+
+        }
+
         if (Input.GetKeyDown(KeyCode.Y))
         {
 

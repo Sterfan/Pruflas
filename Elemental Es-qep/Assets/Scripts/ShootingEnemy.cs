@@ -19,6 +19,13 @@ public class ShootingEnemy : MonoBehaviour
             //GameObject bullet = (GameObject)Instantiate(Bulletprefab, transform.position, transform.rotation);
             //bullet.layer = gameObject.layer;
 
+            if(HealthManagerPlayer.playerAlive == false)
+            {
+
+                return;
+
+            }
+
             if (Bulletprefab.CompareTag("EarthEnemybullet") == true)
             {
                 GameObject bullet = (GameObject)Instantiate(Bulletprefab, transform.position, transform.rotation);
