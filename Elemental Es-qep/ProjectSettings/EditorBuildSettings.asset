@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Maher's Scene/EndScreen.unity
+    guid: db58d012a43d50441b572b9e6e93fa20
   m_configObjects: {}

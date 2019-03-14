@@ -11,7 +11,8 @@ public class HealthManagerPlayer : MonoBehaviour
     public float  currentHealth;
     public Slider healthBar;
     public GameObject deathAnimation;
-
+    public float waitForIT = 1;
+    public float cooldown = 1;
     public static bool playerAlive;
 
     void Start()
@@ -24,16 +25,23 @@ public class HealthManagerPlayer : MonoBehaviour
     void Update()
     {
         healthBar.value = currentHealth;
+       
 
         if (currentHealth <= 0)
         {
+            cooldown -= Time.deltaTime;
             playerAlive = false;
-
-            Destroy(gameObject);
             
             Instantiate(deathAnimation, transform.position, transform.rotation);
 
             FindObjectOfType<AudioManager>().Play("PlayerDeath");
+
+            if(cooldown <= 0)
+            {
+                Destroy(gameObject);
+                cooldown = waitForIT;
+                SceneManager.LoadScene("EndScreen");
+            }
         }
 
     }
