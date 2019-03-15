@@ -28,7 +28,7 @@ public class HPManagerFireEnemy : MonoBehaviour
             Instantiate(deathAnimation, transform.position, transform.rotation);
 
             //FindObjectOfType<AudioManager>().Play("PlayerExplosion");
-
+            scoreScript.scoreValue += 10;
             Destroy(gameObject);
 
             if (Random.Range(0, 5) == dropRate)

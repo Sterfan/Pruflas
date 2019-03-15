@@ -22,8 +22,10 @@ public class HPManagerWindEnemy : MonoBehaviour
         healthBar.value = currentHealth;
 
         if (currentHealth <= 0)
+            
         {
             Instantiate(deathAnimation, transform.position, transform.rotation);
+            scoreScript.scoreValue += 3;
             FindObjectOfType<AudioManager>().Play("PlayerExplosion");
             Destroy(gameObject);
 

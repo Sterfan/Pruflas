@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3862106233478920048}
   - component: {fileID: 8111051785073856807}
   - component: {fileID: 2232580092401482087}
+  - component: {fileID: 140453982775017267}
   - component: {fileID: 5704901172473455167}
   m_Layer: 8
   m_Name: Fire Enemy
@@ -374,6 +375,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Bulletprefab: {fileID: 8585435442311006460, guid: 33c58f147e94c014db1500825bd35fa0,
     type: 3}
+--- !u!114 &140453982775017267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8935536816420087942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbbf265929d429f4782cb93ecaac50a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {fileID: 1904402890116639532, guid: 3574d3f704dac7d4daa213383a8318a8, type: 3}
+  - {fileID: 8932238956940300095, guid: b452dbe54bafa7e4893152a8163a895a, type: 3}
 --- !u!114 &5704901172473455167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,7 +407,7 @@ MonoBehaviour:
   healthBar: {fileID: 6740788633768741538}
   deathAnimation: {fileID: 4384832423005269797, guid: 7c8e60e8ab47f2c488392ec8c7e6a823,
     type: 3}
-  dropRate: 0
+  dropRate: 1
   HPdrop: {fileID: 1377815570064674861, guid: 29b89377711d9f34db0af2d264968451, type: 3}
 --- !u!1001 &8626878932786866935
 PrefabInstance:

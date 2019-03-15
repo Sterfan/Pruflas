@@ -568,7 +568,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &766529717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -644,7 +644,7 @@ MonoBehaviour:
   Waves:
   - name: EarthEnemy
     enemy: {fileID: 635986157007813088, guid: 48deb48f1ef1b794096b08356a784f5a, type: 3}
-    amount: 3
+    amount: 1
     rate: 1
   spawnPoints:
   - {fileID: 405935234}
@@ -693,7 +693,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &912226291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -925,6 +925,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1004860908242366990, guid: a7f3bd219c711a74ebad131acef26c47,
+        type: 3}
+      propertyPath: m_ReferencePixelsPerUnit
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6218116732400960882, guid: a7f3bd219c711a74ebad131acef26c47, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a7f3bd219c711a74ebad131acef26c47, type: 3}
@@ -1085,7 +1090,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1606217992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1294,6 +1299,7 @@ MonoBehaviour:
   healthBar: {fileID: 888778090}
   deathAnimation: {fileID: 3201833542030726892, guid: 7c8e60e8ab47f2c488392ec8c7e6a823,
     type: 3}
+  animator: {fileID: 0}
 --- !u!1001 &982095162969782447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1861,6 +1867,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8939447422068820007, guid: 36b19cd676dd7c24992462daf5a7d2cc, type: 3}
+    - {fileID: 1530670453998372598, guid: 36b19cd676dd7c24992462daf5a7d2cc, type: 3}
+    - {fileID: 7532393906774372654, guid: 36b19cd676dd7c24992462daf5a7d2cc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 36b19cd676dd7c24992462daf5a7d2cc, type: 3}
 --- !u!1001 &8270321591149261715
 PrefabInstance:
