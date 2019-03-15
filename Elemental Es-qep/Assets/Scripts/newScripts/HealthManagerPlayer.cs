@@ -11,27 +11,39 @@ public class HealthManagerPlayer : MonoBehaviour
     public float  currentHealth;
     public Slider healthBar;
     public GameObject deathAnimation;
-    public Animator animator;
-
+    public float waitForIT = 1;
+    public float cooldown = 1;
+    public static bool playerAlive;
 
     void Start()
     {
         currentHealth = maxHealth;
+        playerAlive = true;
     }
 
 
     void Update()
     {
         healthBar.value = currentHealth;
+       
 
         if (currentHealth <= 0)
         {
-            Destroy(gameObject);
-            Application.LoadLevel(Application.loadedLevel);
+            cooldown -= Time.deltaTime;
+            playerAlive = false;
+            
             Instantiate(deathAnimation, transform.position, transform.rotation);
 
             FindObjectOfType<AudioManager>().Play("PlayerDeath");
+
+            if(cooldown <= 0)
+            {
+                Destroy(gameObject);
+                cooldown = waitForIT;
+                SceneManager.LoadScene("EndScreen");
+            }
         }
+
     }
 
     //public void OnFadeComplete()
@@ -51,7 +63,7 @@ public class HealthManagerPlayer : MonoBehaviour
 
         else if (other.gameObject.tag != "HP")
         {
-            Camera.main.GetComponent<ScreenShake>().Shake(0.1f, 0.1f);
+            //Camera.main.GetComponent<ScreenShake>().Shake(0.1f, 0.1f);
             currentHealth--;
         }
 

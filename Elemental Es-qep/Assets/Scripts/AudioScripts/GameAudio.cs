@@ -27,10 +27,24 @@ public class GameAudio : MonoBehaviour
     private void Update()
     {
 
+        if (HealthManagerPlayer.playerAlive == false)
+        {
+
+            FindObjectOfType<AudioManager>().StopMusic("BackgroundAmbiance");
+
+        }
+
         if (Input.GetKeyDown(KeyCode.Y))
         {
 
             SceneManager.LoadScene("MenuAdded");
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+
+            SceneManager.LoadScene("Boss");
 
         }
 
