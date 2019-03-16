@@ -30,7 +30,7 @@ public class PlayerColorChange : MonoBehaviour
     {
         Debug.Log(sprites[spriteVersion].name);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetMouseButtonDown(1))
         {
             spriteVersion++;
             if (spriteVersion > 3)
