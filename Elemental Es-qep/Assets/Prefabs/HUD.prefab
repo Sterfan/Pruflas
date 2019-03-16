@@ -262,10 +262,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSprites:
-  - {fileID: 21300000, guid: 1d5135c2c42ad1f47a561dabef8c3328, type: 3}
-  - {fileID: 21300000, guid: 8cb3aadf51446c540bcda8a74d5b01af, type: 3}
-  - {fileID: 21300000, guid: 4dca611f90680c142b2bd8c02e9d72f4, type: 3}
-  - {fileID: 21300000, guid: cf89f4ba59644e648bb5aa3ae2d20580, type: 3}
+  - {fileID: 21300000, guid: 8614fb57169eef14fbd69d3dd52359c6, type: 3}
+  - {fileID: 21300000, guid: c7859f1ecc899b84f8b16c8c5f6cc8c1, type: 3}
+  - {fileID: 21300000, guid: c89e6eabe0390464abf71a419845555a, type: 3}
+  - {fileID: 21300000, guid: a8fe6d2897133fa4f9ed6d1f4644a4a4, type: 3}
   BulletUI: {fileID: 1004860909046676861}
 --- !u!114 &1004860909046676861
 MonoBehaviour:
@@ -274,7 +274,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1004860909046676851}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
