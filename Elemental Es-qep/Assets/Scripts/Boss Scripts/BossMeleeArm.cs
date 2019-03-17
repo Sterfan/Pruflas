@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class BossMeleeArm : MonoBehaviour
 {
-    public GameObject detectionLine;
+    //public GameObject detectionLine;
     
     public float moveSpeed = 10;
     public GameObject pointA;
     public GameObject pointB;
-    private bool reverseMove = false;
+    private bool reverseMove = true;
     public Transform objectToUse;
     public bool allowedToMove = false;
     private float startTime;
