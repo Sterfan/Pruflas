@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneManage : MonoBehaviour
+public class LVL4SceneManage : MonoBehaviour
 {
     public Animator transision;
     public string sceneName;
-    
+
     void Start()
     {
-        
+
     }
 
-    
+
     void Update()
     {
-        if (scoreScript.scoreValue >= 40)
+        if (scoreScript.scoreValue >= 200)
         {
             StartCoroutine(LoadScene());
         }
@@ -25,7 +25,7 @@ public class SceneManage : MonoBehaviour
     IEnumerator LoadScene()
     {
         transision.SetTrigger("end");
-        
+
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(sceneName);
     }
