@@ -549,22 +549,22 @@ PrefabInstance:
     - target: {fileID: 1004860909632318676, guid: a7f3bd219c711a74ebad131acef26c47,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 306
+      value: 269.3
       objectReference: {fileID: 0}
     - target: {fileID: 1004860909632318676, guid: a7f3bd219c711a74ebad131acef26c47,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -714
+      value: -688.2
       objectReference: {fileID: 0}
     - target: {fileID: 1004860909551365858, guid: a7f3bd219c711a74ebad131acef26c47,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 308.33002
+      value: 271.63004
       objectReference: {fileID: 0}
     - target: {fileID: 1004860909551365858, guid: a7f3bd219c711a74ebad131acef26c47,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -710.6
+      value: -684.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7f3bd219c711a74ebad131acef26c47, type: 3}
@@ -584,7 +584,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1462483140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -597,6 +597,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6da59ae9cf5aa4ca1e38c1083b5d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transision: {fileID: 7085126221930474049, guid: 5ce7f3c96140db04a8d48fd0e71795b3,
+    type: 3}
   sceneName: Level 2
 --- !u!4 &1462483141
 Transform:
