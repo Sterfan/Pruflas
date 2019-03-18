@@ -33,15 +33,17 @@ public class HealthManagerPlayer : MonoBehaviour
             playerAlive = false;
             
             Instantiate(deathAnimation, transform.position, transform.rotation);
-
+            
             FindObjectOfType<AudioManager>().Play("PlayerDeath");
 
-            if(cooldown <= 0)
+            if (cooldown <= 0)
             {
                 Destroy(gameObject);
                 cooldown = waitForIT;
                 SceneManager.LoadScene("EndScreen");
             }
+
+
         }
 
     }

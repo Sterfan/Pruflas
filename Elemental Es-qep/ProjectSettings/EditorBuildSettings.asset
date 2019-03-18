@@ -24,8 +24,17 @@ EditorBuildSettings:
     path: Assets/Maher's Scene/Level 3.unity
     guid: bc0f9192a97290c43984a37d74d607e9
   - enabled: 1
+    path: Assets/Maher's Scene/Level 4.unity
+    guid: 4d7c1bc1cb58fdc41a16d922a6cde38b
+  - enabled: 1
+    path: Assets/Maher's Scene/Level 5.unity
+    guid: 672c9d71423245147afbdb9d64c443c5
+  - enabled: 1
     path: Assets/Maher's Scene/Boss.unity
     guid: e0fe5fadd34a5324ca983aedc6a5ef87
+  - enabled: 1
+    path: Assets/Maher's Scene/EndScreen.unity
+    guid: e20ade6b5dccaae48a13130ddeee5cf2
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
