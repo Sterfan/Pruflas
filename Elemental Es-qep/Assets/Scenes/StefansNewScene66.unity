@@ -229,16 +229,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8826983393599838729, guid: 5ab701fee8e02c94d8e7c64d134a3515,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6945546376496554012, guid: 5ab701fee8e02c94d8e7c64d134a3515,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8826983393548707948, guid: 5ab701fee8e02c94d8e7c64d134a3515,
         type: 3}
       propertyPath: eventSystem
@@ -249,6 +239,16 @@ PrefabInstance:
       propertyPath: selectedObject
       value: 
       objectReference: {fileID: 816921632}
+    - target: {fileID: 8826983393599838729, guid: 5ab701fee8e02c94d8e7c64d134a3515,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945546376496554012, guid: 5ab701fee8e02c94d8e7c64d134a3515,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ab701fee8e02c94d8e7c64d134a3515, type: 3}
 --- !u!1001 &148999065
@@ -2119,11 +2119,6 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1530670453998372598, guid: 36b19cd676dd7c24992462daf5a7d2cc,
-        type: 3}
-      propertyPath: healthBar
-      value: 
-      objectReference: {fileID: 444868903}
     - target: {fileID: 8939447422068820007, guid: 36b19cd676dd7c24992462daf5a7d2cc,
         type: 3}
       propertyPath: m_Enabled
@@ -2158,6 +2153,36 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6605548369827352722, guid: 14b5c54d3336f4c4a825895c3595fa52,
         type: 3}
+    - target: {fileID: 7532393906774372645, guid: 36b19cd676dd7c24992462daf5a7d2cc,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7532393906774372645, guid: 36b19cd676dd7c24992462daf5a7d2cc,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7532393906774372645, guid: 36b19cd676dd7c24992462daf5a7d2cc,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7532393906774372645, guid: 36b19cd676dd7c24992462daf5a7d2cc,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7532393906774372645, guid: 36b19cd676dd7c24992462daf5a7d2cc,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7532393906774372645, guid: 36b19cd676dd7c24992462daf5a7d2cc,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4748130035636149967, guid: 36b19cd676dd7c24992462daf5a7d2cc,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2208,36 +2233,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7532393906774372645, guid: 36b19cd676dd7c24992462daf5a7d2cc,
+    - target: {fileID: 1530670453998372598, guid: 36b19cd676dd7c24992462daf5a7d2cc,
         type: 3}
-      propertyPath: m_SpriteTilingProperty.border.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7532393906774372645, guid: 36b19cd676dd7c24992462daf5a7d2cc,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.border.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7532393906774372645, guid: 36b19cd676dd7c24992462daf5a7d2cc,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.border.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7532393906774372645, guid: 36b19cd676dd7c24992462daf5a7d2cc,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.border.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7532393906774372645, guid: 36b19cd676dd7c24992462daf5a7d2cc,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7532393906774372645, guid: 36b19cd676dd7c24992462daf5a7d2cc,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 444868903}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36b19cd676dd7c24992462daf5a7d2cc, type: 3}
 --- !u!1001 &8270321591149261715

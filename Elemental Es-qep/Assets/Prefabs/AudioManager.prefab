@@ -75,7 +75,7 @@ MonoBehaviour:
     isLooping: 0
     playOnAwake: 0
   - audioName: BackgroundMusic
-    audioClip: {fileID: 8300000, guid: 4d026715e672bc54885845bf3e4e0bfa, type: 3}
+    audioClip: {fileID: 8300000, guid: d0f367e6162fbf246b88fcaad329016b, type: 3}
     volume: 1
     source: {fileID: 0}
     isLooping: 0
@@ -188,3 +188,22 @@ MonoBehaviour:
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
+  - audioName: YouLost
+    audioClip: {fileID: 8300000, guid: 6f51703fc78f5e14ba79f9f578005926, type: 3}
+    volume: 0.5
+    source: {fileID: 0}
+    isLooping: 1
+    playOnAwake: 0
+  - audioName: Boss1
+    audioClip: {fileID: 8300000, guid: 6b26e40cdc742434e8010bd7baf2bff5, type: 3}
+    volume: 0.5
+    source: {fileID: 0}
+    isLooping: 0
+    playOnAwake: 0
+  - audioName: Boss2
+    audioClip: {fileID: 8300000, guid: 6f51703fc78f5e14ba79f9f578005926, type: 3}
+    volume: 0.5
+    source: {fileID: 0}
+    isLooping: 1
+    playOnAwake: 0
+  Mixer: {fileID: 24100000, guid: d84644eb59c7bb743ab737ba29f18437, type: 2}
