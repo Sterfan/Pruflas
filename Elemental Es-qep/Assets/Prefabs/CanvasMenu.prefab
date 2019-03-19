@@ -430,9 +430,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding:
     m_Left: 0
-    m_Right: 500
-    m_Top: 150
-    m_Bottom: 90
+    m_Right: 360
+    m_Top: 100
+    m_Bottom: 55
   m_ChildAlignment: 4
   m_Spacing: 0
   m_ChildForceExpandWidth: 1

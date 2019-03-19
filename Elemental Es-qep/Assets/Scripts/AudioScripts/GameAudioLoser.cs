@@ -1,0 +1,33 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class GameAudioLoser : MonoBehaviour
+{
+    // Start is called before the first frame update
+    private void Start()
+    {
+
+        FindObjectOfType<AudioManager>().Play("YouLost");
+
+        //StartCoroutine(Wait());
+
+    }
+
+    //IEnumerator Wait()
+    //{
+
+    //    yield return new WaitForSeconds(6.865f);
+
+    //    FindObjectOfType<AudioManager>().Play("TitleTheme2");
+
+    //}
+
+    private void Update()
+    {
+
+        
+
+    }
+}
