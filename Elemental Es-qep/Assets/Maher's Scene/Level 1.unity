@@ -614,22 +614,37 @@ PrefabInstance:
     - target: {fileID: 1004860909632318676, guid: a7f3bd219c711a74ebad131acef26c47,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 269.3
+      value: 342
       objectReference: {fileID: 0}
     - target: {fileID: 1004860909632318676, guid: a7f3bd219c711a74ebad131acef26c47,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -688.2
+      value: -687.5
       objectReference: {fileID: 0}
     - target: {fileID: 1004860909551365858, guid: a7f3bd219c711a74ebad131acef26c47,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 271.63004
+      value: 344.33005
       objectReference: {fileID: 0}
     - target: {fileID: 1004860909551365858, guid: a7f3bd219c711a74ebad131acef26c47,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -684.8
+      value: -684.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865821188047128061, guid: a7f3bd219c711a74ebad131acef26c47,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 374.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865821188047128061, guid: a7f3bd219c711a74ebad131acef26c47,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -592.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5134413243160855545, guid: a7f3bd219c711a74ebad131acef26c47,
+        type: 3}
+      propertyPath: m_Name
+      value: HUD Background
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7f3bd219c711a74ebad131acef26c47, type: 3}
@@ -856,6 +871,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2284100745205623115, guid: 6d14f99a4ba8a7f4b8311ce6bd31daed,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2284100745205623117, guid: 6d14f99a4ba8a7f4b8311ce6bd31daed,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -925,6 +945,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5562871266855603348, guid: ad4fd11eb6df8ff45bf942e277b45b1a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5562871266855603350, guid: ad4fd11eb6df8ff45bf942e277b45b1a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -993,6 +1018,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EnemySpawner (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5799275782089073097, guid: 86dc03dfd342881439db2af46146d41c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5799275782089073099, guid: 86dc03dfd342881439db2af46146d41c,
         type: 3}
@@ -4525,7 +4555,7 @@ PrefabInstance:
     - target: {fileID: 7684505249904516577, guid: 964980ea789a2574295faaf4211eb859,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7684505249904516591, guid: 964980ea789a2574295faaf4211eb859,
         type: 3}

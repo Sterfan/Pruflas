@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class HPManagerWaterEnemy : MonoBehaviour
 {
     public int maxHealth = 8;
@@ -10,6 +11,7 @@ public class HPManagerWaterEnemy : MonoBehaviour
     public GameObject deathAnimation;
     public int dropRate = 0;
     public GameObject HPdrop;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -26,6 +28,7 @@ public class HPManagerWaterEnemy : MonoBehaviour
             
             Destroy(gameObject);
             scoreScript.scoreValue += 5;
+
             if (Random.Range(0, 5) == dropRate)
             {
                 GameObject pickupdrop = Instantiate(HPdrop, gameObject.transform.position, Quaternion.identity);

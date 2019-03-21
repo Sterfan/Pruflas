@@ -12,6 +12,7 @@ public class HPManagerEarthEnemy : MonoBehaviour
     public int  dropRate = 0;
     public GameObject HPdrop;
     public GameObject earthRam;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -25,10 +26,11 @@ public class HPManagerEarthEnemy : MonoBehaviour
         if (currentHealth <= 0)
         {
             Instantiate(deathAnimation, transform.position, transform.rotation);
-            scoreScript.scoreValue += 5;
+            Destroy(gameObject);
             FindObjectOfType<AudioManager>().Play("PlayerExplosion");
 
-            Destroy(gameObject);
+            
+            scoreScript.scoreValue += 5;
 
             if (Random.Range(0, 5) == dropRate)
             {
@@ -36,10 +38,10 @@ public class HPManagerEarthEnemy : MonoBehaviour
             }
         }
 
-        if (GameObject.FindGameObjectWithTag ("Player") == null )
-        {
-            Destroy(gameObject);
-        }
+        //if (GameObject.FindGameObjectWithTag ("Player") == null )
+        //{
+        //    Destroy(gameObject);
+        //}
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -48,6 +50,12 @@ public class HPManagerEarthEnemy : MonoBehaviour
             currentHealth--;
             FindObjectOfType<AudioManager>().Play("EarthHitWithFire");
         }
+        else if (other.gameObject.tag == "Player")
+        {
+            Instantiate(deathAnimation, transform.position, transform.rotation);
+            Destroy(gameObject);
+            FindObjectOfType<AudioManager>().Play("PlayerExplosion");
+        }
         else
         {
             //currentHealth--;
@@ -55,11 +63,11 @@ public class HPManagerEarthEnemy : MonoBehaviour
         }
 
 
-        if (other.gameObject.tag == "Player")
-        {
-            Instantiate(earthRam, transform.position, transform.rotation);
-            Destroy(gameObject);
-        }
+        //if (other.gameObject.tag == "Player")
+        //{
+        //    Instantiate(earthRam, transform.position, transform.rotation);
+        //    Destroy(gameObject);
+        //}
     }
 
     public void TakingDamage(int damagetaken)
