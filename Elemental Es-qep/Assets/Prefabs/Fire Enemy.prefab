@@ -405,7 +405,7 @@ MonoBehaviour:
   maxHealth: 10
   currentHealth: 0
   healthBar: {fileID: 6740788633768741538}
-  deathAnimation: {fileID: 4384832423005269797, guid: 7c8e60e8ab47f2c488392ec8c7e6a823,
+  deathAnimation: {fileID: 6886294811697418364, guid: 91f839201fd30a24384816250d264b65,
     type: 3}
   dropRate: 1
   HPdrop: {fileID: 1377815570064674861, guid: 29b89377711d9f34db0af2d264968451, type: 3}

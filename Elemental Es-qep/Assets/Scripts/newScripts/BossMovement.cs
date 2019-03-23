@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossMovement : MonoBehaviour
 {
-    private float moveSpeed = 3f;
+    private float moveSpeed = 4f;
     private float waitTime = 2f;
     private float startWaitTime = 0f;
 
