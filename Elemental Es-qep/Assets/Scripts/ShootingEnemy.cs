@@ -16,8 +16,7 @@ public class ShootingEnemy : MonoBehaviour
             cooldownTimer = ShootingDelay;
             Debug.Log("Pew!");
 
-            //GameObject bullet = (GameObject)Instantiate(Bulletprefab, transform.position, transform.rotation);
-            //bullet.layer = gameObject.layer;
+            
 
             if(HealthManagerPlayer.playerAlive == false)
             {
