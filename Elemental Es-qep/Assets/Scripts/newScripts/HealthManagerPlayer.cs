@@ -25,7 +25,14 @@ public class HealthManagerPlayer : MonoBehaviour
     void Update()
     {
         healthBar.value = currentHealth;
-       
+
+        if (currentHealth > 5)
+        {
+
+            FindObjectOfType<AudioManager>().StopMusic("Warning");
+
+        }
+
 
         if (currentHealth <= 0)
         {
@@ -67,6 +74,20 @@ public class HealthManagerPlayer : MonoBehaviour
         {
             //Camera.main.GetComponent<ScreenShake>().Shake(0.1f, 0.1f);
             currentHealth--;
+
+            if (currentHealth <= 5)
+            {
+
+                FindObjectOfType<AudioManager>().Play("Warning");
+
+            }
+
+            //if (currentHealth <= 5)
+            //{
+
+            //    FindObjectOfType<AudioManager>().StopMusic("Warning");
+
+            //}
         }
 
 

@@ -11,7 +11,7 @@ public class GameAudio : MonoBehaviour
 
         FindObjectOfType<AudioManager>().Play("BackgroundAmbiance");
 
-        //StartCoroutine(Wait());
+        FindObjectOfType<AudioManager>().Play("BackgroundMusic");
 
     }
 
@@ -31,6 +31,8 @@ public class GameAudio : MonoBehaviour
         {
 
             FindObjectOfType<AudioManager>().StopMusic("BackgroundAmbiance");
+
+            FindObjectOfType<AudioManager>().StopMusic("BackgroundMusic");
 
         }
 

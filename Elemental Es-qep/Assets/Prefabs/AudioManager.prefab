@@ -76,9 +76,9 @@ MonoBehaviour:
     playOnAwake: 0
   - audioName: BackgroundMusic
     audioClip: {fileID: 8300000, guid: 32cdb429194aa3c4684e30bb129811da, type: 3}
-    volume: 0.6
+    volume: 0.75
     source: {fileID: 0}
-    isLooping: 0
+    isLooping: 1
     playOnAwake: 0
   - audioName: UpgradeHealth
     audioClip: {fileID: 8300000, guid: 97639b1e992d3b44585e977c8b605f0d, type: 3}
@@ -166,7 +166,7 @@ MonoBehaviour:
     playOnAwake: 0
   - audioName: PlayerDeath
     audioClip: {fileID: 8300000, guid: 8ce78f497e51be24abef2a40be0b7511, type: 3}
-    volume: 0.4
+    volume: 0.25
     source: {fileID: 0}
     isLooping: 0
     playOnAwake: 0
@@ -203,6 +203,18 @@ MonoBehaviour:
   - audioName: Boss2
     audioClip: {fileID: 8300000, guid: 6f51703fc78f5e14ba79f9f578005926, type: 3}
     volume: 0.5
+    source: {fileID: 0}
+    isLooping: 1
+    playOnAwake: 0
+  - audioName: Warning
+    audioClip: {fileID: 8300000, guid: 4085220eb4e590e41ab8f89ffae6e44d, type: 3}
+    volume: 0.2
+    source: {fileID: 0}
+    isLooping: 1
+    playOnAwake: 0
+  - audioName: Winner
+    audioClip: {fileID: 8300000, guid: 84f1ee30c84f958479b154a22b639dbd, type: 3}
+    volume: 0.2
     source: {fileID: 0}
     isLooping: 1
     playOnAwake: 0

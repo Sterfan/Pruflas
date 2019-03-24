@@ -27,7 +27,14 @@ public class GameAudioLoser : MonoBehaviour
     private void Update()
     {
 
-        
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+
+            FindObjectOfType<AudioManager>().StopMusic("YouLost");
+
+            SceneManager.LoadScene("MenuAdded");
+
+        }
 
     }
 }
