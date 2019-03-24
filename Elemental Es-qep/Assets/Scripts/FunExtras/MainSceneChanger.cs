@@ -8,6 +8,21 @@ public class MainSceneChanger : MonoBehaviour
 {
     public Animator animator;
 
+    //void Start()
+    //{
+
+    //    Scene currentScene = SceneManager.GetActiveScene();
+    //    string sceneName = currentScene.name;
+
+    //    if (sceneName == "StefansNewScene66")
+    //    {
+
+    //        animator.SetTrigger("DialogueBox1");
+
+    //    }
+    //}
+
+
     public void PlayGame()
     {
 
@@ -17,7 +32,15 @@ public class MainSceneChanger : MonoBehaviour
 
     void Update()
     {
-        if(HealthManagerPlayer.playerAlive == false)
+        //if (sceneName("Level 1"))
+        //{
+
+
+
+        //}
+
+
+        if (HealthManagerPlayer.playerAlive == false)
         {
 
             animator.SetTrigger("PlayerDead");

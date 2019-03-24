@@ -932,8 +932,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3.71, y: 0}
-  m_SizeDelta: {x: 18.87, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7340912468828933289
 CanvasRenderer:
@@ -1006,8 +1006,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000011444092, y: 0}
-  m_SizeDelta: {x: 0.000022888, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7340912468875641788
 CanvasRenderer:
@@ -1080,8 +1080,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3.71, y: 0}
-  m_SizeDelta: {x: 18.87, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7340912468882515927
 CanvasRenderer:
@@ -1529,11 +1529,11 @@ RectTransform:
   m_Father: {fileID: 7340912468958460312}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 53.52, y: 23.62}
-  m_Pivot: {x: 0.49999997, y: 0.5000001}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 145.38951, y: -172.24232}
+  m_SizeDelta: {x: 50, y: 20}
+  m_Pivot: {x: 0, y: 0}
 --- !u!222 &7340912468951364216
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1850,7 +1850,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 06458e49bd03ccc40ab4ef8559babbfc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d59b7bc5ad8bd8d49a6231a49187d4e1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3609,11 +3609,11 @@ RectTransform:
   m_Father: {fileID: 7340912468958460312}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 50, y: 20}
-  m_Pivot: {x: 0.49999997, y: 0.5000001}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 135.3895, y: -221.4705}
+  m_SizeDelta: {x: 70, y: 20}
+  m_Pivot: {x: 0, y: 0}
 --- !u!222 &7340912469679373770
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3678,9 +3678,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 8740ca742b66e37439985c6870478266,
+    m_HighlightedSprite: {fileID: 21300000, guid: 496788b8b48ea6348a019938798c448d,
       type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 8740ca742b66e37439985c6870478266, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 496788b8b48ea6348a019938798c448d, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -3714,8 +3714,7 @@ MonoBehaviour:
           m_StringArgument: TitleTheme
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
-          type: 3}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 5
         m_Arguments:
@@ -3869,11 +3868,11 @@ RectTransform:
   m_Father: {fileID: 7340912468958460312}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 53.52, y: 15.92}
-  m_Pivot: {x: 0.5, y: 0.49999988}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 145.38951, y: -270.6987}
+  m_SizeDelta: {x: 50, y: 20}
+  m_Pivot: {x: 0, y: 0}
 --- !u!222 &7340912469732208530
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4281,8 +4280,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3.06, y: 0}
-  m_SizeDelta: {x: 6.12, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7340912469865803656
 CanvasRenderer:
@@ -4476,9 +4475,9 @@ RectTransform:
   m_Father: {fileID: 7340912468958460312}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 170.3895, y: -69.2171}
   m_SizeDelta: {x: 552.2, y: 108.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7340912469883260156
@@ -5117,9 +5116,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 6cb79363a95f1c046b672e7bffedb8b5,
+    m_HighlightedSprite: {fileID: 21300000, guid: ab7d22d041221254797ba3ae64b47563,
       type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 6cb79363a95f1c046b672e7bffedb8b5, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: ab7d22d041221254797ba3ae64b47563, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -5153,8 +5152,7 @@ MonoBehaviour:
           m_StringArgument: TitleTheme
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
-          type: 3}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 5
         m_Arguments:
@@ -5530,7 +5528,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 06458e49bd03ccc40ab4ef8559babbfc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d59b7bc5ad8bd8d49a6231a49187d4e1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5876,9 +5874,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 6cb79363a95f1c046b672e7bffedb8b5,
+    m_HighlightedSprite: {fileID: 21300000, guid: ab7d22d041221254797ba3ae64b47563,
       type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: 6cb79363a95f1c046b672e7bffedb8b5, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: ab7d22d041221254797ba3ae64b47563, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -5912,8 +5910,7 @@ MonoBehaviour:
           m_StringArgument: TitleTheme
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
-          type: 3}
+      - m_Target: {fileID: 0}
         m_MethodName: Play
         m_Mode: 5
         m_Arguments:
@@ -5993,11 +5990,11 @@ RectTransform:
   m_Father: {fileID: 7340912468958460312}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 29.42, y: 10.05}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 150.3895, y: -309.9269}
+  m_SizeDelta: {x: 40, y: 10}
+  m_Pivot: {x: 0, y: 0}
 --- !u!222 &7340912470326967918
 CanvasRenderer:
   m_ObjectHideFlags: 0
