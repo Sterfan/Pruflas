@@ -208,7 +208,7 @@ MonoBehaviour:
     playOnAwake: 0
   - audioName: Warning
     audioClip: {fileID: 8300000, guid: 4085220eb4e590e41ab8f89ffae6e44d, type: 3}
-    volume: 0.2
+    volume: 0.1
     source: {fileID: 0}
     isLooping: 1
     playOnAwake: 0
