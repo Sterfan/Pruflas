@@ -314,6 +314,7 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -301.8733
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     - target: {fileID: 7812375687873128031, guid: 5ab701fee8e02c94d8e7c64d134a3515,
         type: 3}
       propertyPath: m_IsActive
@@ -327,6 +328,21 @@ PrefabInstance:
     - target: {fileID: 4403150822416101196, guid: 5ab701fee8e02c94d8e7c64d134a3515,
         type: 3}
       propertyPath: m_Enabled
+=======
+    - target: {fileID: 6945546376496554012, guid: 5ab701fee8e02c94d8e7c64d134a3515,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945546376496554012, guid: 5ab701fee8e02c94d8e7c64d134a3515,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945546376496554011, guid: 5ab701fee8e02c94d8e7c64d134a3515,
+        type: 3}
+      propertyPath: m_IsActive
+>>>>>>> Stashed changes
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

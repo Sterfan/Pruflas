@@ -1216,10 +1216,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 20
   currentHealth: 0
-  healthBar: {fileID: 0}
-  deathAnimation: {fileID: 0}
+  healthBar: {fileID: 88554193}
+  deathAnimation: {fileID: 6343939735063645384, guid: 55dd851d0d46e024bb101ebda7755d59,
+    type: 3}
   dropRate: 0
-  HPdrop: {fileID: 0}
+  HPdrop: {fileID: 1377815570064674861, guid: 29b89377711d9f34db0af2d264968451, type: 3}
 --- !u!1 &129526719
 GameObject:
   m_ObjectHideFlags: 0
@@ -2758,6 +2759,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6945546376496554011, guid: 5ab701fee8e02c94d8e7c64d134a3515,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ab701fee8e02c94d8e7c64d134a3515, type: 3}
 --- !u!1 &937263025
@@ -3254,11 +3260,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1485024834}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 512450df4d81c96418d1fc66b4165bbd, type: 3}
+  m_Script: {fileID: 11500000, guid: 424609f69b95e9f42b679202e6d1359d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 20
   currentHealth: 0
+  healthBar: {fileID: 88554193}
+  deathAnimation: {fileID: 6886294811697418364, guid: 91f839201fd30a24384816250d264b65,
+    type: 3}
+  dropRate: 0
+  HPdrop: {fileID: 1377815570064674861, guid: 29b89377711d9f34db0af2d264968451, type: 3}
 --- !u!4 &1485024836
 Transform:
   m_ObjectHideFlags: 0
@@ -3982,11 +3993,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1717572483}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 512450df4d81c96418d1fc66b4165bbd, type: 3}
+  m_Script: {fileID: 11500000, guid: 424609f69b95e9f42b679202e6d1359d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 20
   currentHealth: 0
+  healthBar: {fileID: 88554193}
+  deathAnimation: {fileID: 6886294811697418364, guid: 91f839201fd30a24384816250d264b65,
+    type: 3}
+  dropRate: 0
+  HPdrop: {fileID: 1377815570064674861, guid: 29b89377711d9f34db0af2d264968451, type: 3}
 --- !u!4 &1717572485
 Transform:
   m_ObjectHideFlags: 0
@@ -4296,9 +4312,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b0fb220bc38aa74d8deb9c4a1ee460c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 50
+  maxHealth: 1
   currentHealth: 0
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 88554193}
+  deathAnimation: {fileID: 5647334928670021901, guid: e703118755e8b7c44b556ebf8c9a3baa,
+    type: 3}
+  waitForIT: 1
+  cooldown: 1
 --- !u!114 &1774469971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4846,12 +4866,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32fef43a3d338a340b76e453960648ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 6
+  maxHealth: 20
   currentHealth: 0
-  healthBar: {fileID: 0}
-  deathAnimation: {fileID: 0}
+  healthBar: {fileID: 88554193}
+  deathAnimation: {fileID: 5323184803549429549, guid: f6097100cfd9395448f13cf1340f3e8c,
+    type: 3}
   dropRate: 1
-  HPdrop: {fileID: 0}
+  HPdrop: {fileID: 1377815570064674861, guid: 29b89377711d9f34db0af2d264968451, type: 3}
 --- !u!1 &1882639186
 GameObject:
   m_ObjectHideFlags: 0
