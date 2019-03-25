@@ -524,9 +524,9 @@ GameObject:
   - component: {fileID: 2129048130611916236}
   - component: {fileID: 8670463699547532049}
   - component: {fileID: 2914133624903233235}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: water
-  m_TagString: Untagged
+  m_TagString: WaterEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
