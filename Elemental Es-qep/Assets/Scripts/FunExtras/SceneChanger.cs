@@ -18,7 +18,7 @@ public class SceneChanger : MonoBehaviour
     public void OnFadeComplete()
     {
 
-        SceneManager.LoadScene("Maher's scene");
+        SceneManager.LoadScene("Level 1");
 
     }
 }
