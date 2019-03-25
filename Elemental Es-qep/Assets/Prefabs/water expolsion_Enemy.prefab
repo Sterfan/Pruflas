@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6343939735063645367}
   - component: {fileID: 6343939735063645366}
+  - component: {fileID: 148883175382496930}
   - component: {fileID: 6343939735063645385}
   m_Layer: 0
   m_Name: water expolsion_Enemy
@@ -80,6 +81,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &148883175382496930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6343939735063645384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a1d7fb0d50ff2e40a7473b175eca4d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &6343939735063645385
 Animator:
   serializedVersion: 3

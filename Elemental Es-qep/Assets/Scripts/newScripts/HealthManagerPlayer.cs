@@ -40,7 +40,9 @@ public class HealthManagerPlayer : MonoBehaviour
             playerAlive = false;
             
             Instantiate(deathAnimation, transform.position, transform.rotation);
-            
+
+            FindObjectOfType<AudioManager>().StopMusic("Warning");
+
             FindObjectOfType<AudioManager>().Play("PlayerDeath");
 
             if (cooldown <= 0)
