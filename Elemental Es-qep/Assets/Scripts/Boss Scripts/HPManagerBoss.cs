@@ -7,14 +7,14 @@ using UnityEngine.SceneManagement;
 
 public class HPManagerBoss : MonoBehaviour
 {
-    public int maxHealth = 20;
+    public int maxHealth = 25;
     public int currentHealth;
     public Slider healthBar;
     public GameObject deathAnimation;
     public float waitForIT = 1;
     public float cooldown = 1;
     public static bool win;
-    
+
 
     void Start()
     {
@@ -26,8 +26,7 @@ public class HPManagerBoss : MonoBehaviour
     void Update()
     {
         healthBar.value = currentHealth;
-        
-
+      
         if (currentHealth <= 0)
         {
             win = true;
@@ -59,10 +58,7 @@ public class HPManagerBoss : MonoBehaviour
         currentHealth -= damagetaken;
     }
 
-    public void partDestroyed (int damaged)
-    {
-        currentHealth -= damaged;
-    }
+    
 }
 
 

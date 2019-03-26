@@ -5,8 +5,9 @@ using UnityEngine;
 public class BossFArmsHPManager : MonoBehaviour
 {
     
-    public int maxHealth = 10;
+    public int maxHealth = 15;
     public int currentHealth;
+    
     public GameObject deathAnimation;
     public int dropRate = 0;
     public GameObject HPdrop;
@@ -29,8 +30,8 @@ public class BossFArmsHPManager : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("PlayerExplosion");
             scoreScript.scoreValue += 10;
             Destroy(gameObject);
+           
 
-            
 
             if (Random.Range(0, 3) == dropRate)
             {

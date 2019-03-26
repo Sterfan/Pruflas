@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class BossEArmsHPManager : MonoBehaviour
 {
-    public int maxHealth = 10;
+    public int maxHealth = 15;
     public int currentHealth;
+
     public GameObject deathAnimation;
     public int dropRate = 0;
     public GameObject HPdrop;

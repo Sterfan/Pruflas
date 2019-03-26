@@ -14,8 +14,6 @@ public class ShootingEnemy : MonoBehaviour
         if (cooldownTimer <= 0)
         {
             cooldownTimer = ShootingDelay;
-            Debug.Log("Pew!");
-
             
 
             if(HealthManagerPlayer.playerAlive == false)
@@ -28,7 +26,7 @@ public class ShootingEnemy : MonoBehaviour
             if (Bulletprefab.CompareTag("EarthEnemybullet") == true)
             {
                 GameObject bullet = (GameObject)Instantiate(Bulletprefab, transform.position, transform.rotation);
-                bullet.layer = gameObject.layer;
+                //bullet.layer = gameObject.layer;
 
                 FindObjectOfType<AudioManager>().Play("EnemyEarthShot");
 
@@ -37,7 +35,7 @@ public class ShootingEnemy : MonoBehaviour
             if (Bulletprefab.CompareTag("FireEnemybullet") == true)
             {
                 GameObject bullet = (GameObject)Instantiate(Bulletprefab, transform.position, transform.rotation);
-                bullet.layer = gameObject.layer;
+                //bullet.layer = gameObject.layer;
 
                 FindObjectOfType<AudioManager>().Play("EnemyFireShot");
 
@@ -46,7 +44,7 @@ public class ShootingEnemy : MonoBehaviour
             if (Bulletprefab.CompareTag("WaterEnemybullet") == true)
             {
                 GameObject bullet = (GameObject)Instantiate(Bulletprefab, transform.position, transform.rotation);
-                bullet.layer = gameObject.layer;
+                //bullet.layer = gameObject.layer;
 
                 FindObjectOfType<AudioManager>().Play("EnemyWaterShot");
 
@@ -55,7 +53,7 @@ public class ShootingEnemy : MonoBehaviour
             if (Bulletprefab.CompareTag("WindEnemybullet") == true)
             {
                 GameObject bullet = (GameObject)Instantiate(Bulletprefab, transform.position, transform.rotation);
-                bullet.layer = gameObject.layer;
+                //bullet.layer = gameObject.layer;
 
                 FindObjectOfType<AudioManager>().Play("EnemyWindShot");
 
