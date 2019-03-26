@@ -4,48 +4,37 @@ using UnityEngine;
 
 public class BossMeleeArm : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed;
-    [SerializeField] private GameObject pointA;
-    [SerializeField] private GameObject pointB;
-    [SerializeField] private bool reverseMove = false;
-    [SerializeField] private Transform objectToUse;
-    [SerializeField] private bool moveThisObject = false;
-    private float startTime;
-    private float journeyLength;
-    private float distCovered;
-    private float fracJourney;
-    void Start()
+    [SerializeField]
+    private Transform[] waypoints;
+
+    [SerializeField]
+    private float moveSpeed = 2f;
+
+
+    private int waypointIndex = 0;
+
+    private void Start()
     {
-        startTime = Time.time;
-        if (moveThisObject)
-        {
-            objectToUse = transform;
-        }
-        journeyLength = Vector3.Distance(pointA.transform.position, pointB.transform.position);
+        transform.position = waypoints[waypointIndex].transform.position;
     }
-    void Update()
+
+    private void Update()
     {
-        distCovered = (Time.time - startTime) * moveSpeed;
-        fracJourney = distCovered / journeyLength;
-        if (reverseMove)
+        Move();
+    }
+
+
+    private void Move()
+    {
+        if (waypointIndex <= waypoints.Length - 1)
         {
-            objectToUse.position = Vector3.Lerp(pointB.transform.position, pointA.transform.position, fracJourney);
-        }
-        else
-        {
-            objectToUse.position = Vector3.Lerp(pointA.transform.position, pointB.transform.position, fracJourney);
-        }
-        if ((Vector3.Distance(objectToUse.position, pointB.transform.position) == 0.0f || Vector3.Distance(objectToUse.position, pointA.transform.position) == 0.0f)) //Checks if the object has travelled to one of the points
-        {
-            if (reverseMove)
+            transform.position = Vector2.MoveTowards(transform.position, 
+            waypoints[waypointIndex].transform.position, moveSpeed * Time.deltaTime);
+
+            if (transform.position == waypoints[waypointIndex].transform.position)
             {
-                reverseMove = false;
+                waypointIndex += 1;
             }
-            else
-            {
-                reverseMove = true;
-            }
-            startTime = Time.time;
         }
     }
 }

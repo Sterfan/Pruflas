@@ -16,7 +16,7 @@ public class LVL3SceneManage : MonoBehaviour
 
     void Update()
     {
-        if (scoreScript.scoreValue >= 150)
+        if (scoreScript.scoreValue >= 100)
         {
             StartCoroutine(LoadScene());
         }

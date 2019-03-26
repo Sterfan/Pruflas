@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossShieldHPManager : MonoBehaviour
+public class BossWshieldHPManager : MonoBehaviour
 {
-    public int maxHealth = 15;
+    public int maxHealth = 10;
     public int currentHealth;
     
     public GameObject deathAnimation;
-    public int dropRate = 1;
+    public int dropRate = 0;
     public GameObject HPdrop;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -21,12 +22,11 @@ public class BossShieldHPManager : MonoBehaviour
         
 
         if (currentHealth <= 0)
-
         {
             Instantiate(deathAnimation, transform.position, transform.rotation);
-            scoreScript.scoreValue += 15;
-            FindObjectOfType<AudioManager>().Play("PlayerExplosion");
+
             Destroy(gameObject);
+            scoreScript.scoreValue += 10;
 
             if (Random.Range(0, 3) == dropRate)
             {
@@ -36,10 +36,10 @@ public class BossShieldHPManager : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Earthbullet")
+        if (other.gameObject.tag == "Windbullet")
         {
             currentHealth--;
-            FindObjectOfType<AudioManager>().Play("WindHitWithEarth");
+            FindObjectOfType<AudioManager>().Play("WaterHitWithWind");
         }
         else
         {
