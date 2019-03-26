@@ -204,15 +204,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7684505249904516577, guid: 964980ea789a2574295faaf4211eb859,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7684505249904516591, guid: 964980ea789a2574295faaf4211eb859,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.35
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7684505249904516591, guid: 964980ea789a2574295faaf4211eb859,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.56
+      value: 4.22
       objectReference: {fileID: 0}
     - target: {fileID: 7684505249904516591, guid: 964980ea789a2574295faaf4211eb859,
         type: 3}
@@ -258,6 +263,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7684505248699425317, guid: 964980ea789a2574295faaf4211eb859,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7684505248699425317, guid: 964980ea789a2574295faaf4211eb859,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.91
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 964980ea789a2574295faaf4211eb859, type: 3}
@@ -640,12 +655,12 @@ PrefabInstance:
     - target: {fileID: 5562871266855603350, guid: ad4fd11eb6df8ff45bf942e277b45b1a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.66
+      value: 8.37
       objectReference: {fileID: 0}
     - target: {fileID: 5562871266855603350, guid: ad4fd11eb6df8ff45bf942e277b45b1a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.82
+      value: 1.41
       objectReference: {fileID: 0}
     - target: {fileID: 5562871266855603350, guid: ad4fd11eb6df8ff45bf942e277b45b1a,
         type: 3}
@@ -796,15 +811,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawner (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5799275782089073097, guid: 86dc03dfd342881439db2af46146d41c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5799275782089073099, guid: 86dc03dfd342881439db2af46146d41c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.41
+      value: -7.98
       objectReference: {fileID: 0}
     - target: {fileID: 5799275782089073099, guid: 86dc03dfd342881439db2af46146d41c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.46
+      value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: 5799275782089073099, guid: 86dc03dfd342881439db2af46146d41c,
         type: 3}
@@ -959,12 +979,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1177336442}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6813f0eea93ac61479bf908c3a9fda75, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d0dd209d06fb5847a888cd2a2532307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   transision: {fileID: 7085126221930474049, guid: 5ce7f3c96140db04a8d48fd0e71795b3,
     type: 3}
-  sceneName: Level 4
+  sceneName: Boss
 --- !u!4 &1177336444
 Transform:
   m_ObjectHideFlags: 0
@@ -999,12 +1019,12 @@ PrefabInstance:
     - target: {fileID: 2284100745205623117, guid: 6d14f99a4ba8a7f4b8311ce6bd31daed,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.46
+      value: 0.97
       objectReference: {fileID: 0}
     - target: {fileID: 2284100745205623117, guid: 6d14f99a4ba8a7f4b8311ce6bd31daed,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.67
+      value: 5.92
       objectReference: {fileID: 0}
     - target: {fileID: 2284100745205623117, guid: 6d14f99a4ba8a7f4b8311ce6bd31daed,
         type: 3}
@@ -4695,7 +4715,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1730105246
 MonoBehaviour:
   m_ObjectHideFlags: 0

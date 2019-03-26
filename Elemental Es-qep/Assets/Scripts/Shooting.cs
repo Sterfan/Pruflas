@@ -25,19 +25,7 @@ public class Shooting : MonoBehaviour
                 currentBullet = 0;
             }
         }
-
-        //if (Input.GetMouseButtonDown(1))
-        //{
-
-        //    FindObjectOfType<AudioManager>().Play("SwitchWeapon");
-
-        //    ++currentBullet;
-
-        //    if (currentBullet + 1 > bullets.Length)
-        //    {
-        //        currentBullet = 0;
-        //    }
-        //}
+        
 
 
         cooldownTimer -= Time.deltaTime;

@@ -7,31 +7,33 @@ using UnityEngine.SceneManagement;
 
 public class HPManagerBoss : MonoBehaviour
 {
-    [SerializeField]
-    private float maxHealth = 20;
-    public float currentHealth;
+    public int maxHealth = 25;
+    public int currentHealth;
     public Slider healthBar;
     public GameObject deathAnimation;
     public float waitForIT = 1;
     public float cooldown = 1;
-    public static bool Win;
+    public static bool win;
+
 
     void Start()
     {
         currentHealth = maxHealth;
-        Win = false;
+        win = false;
     }
+
 
     void Update()
     {
-
+        healthBar.value = currentHealth;
+      
         if (currentHealth <= 0)
         {
+            win = true;
             cooldown -= Time.deltaTime;
-            Win = true;
-
             Instantiate(deathAnimation, transform.position, transform.rotation);
-
+            
+            FindObjectOfType<AudioManager>().Play("PlayerExplosion");
             if (cooldown <= 0)
             {
                 Destroy(gameObject);
@@ -41,22 +43,22 @@ public class HPManagerBoss : MonoBehaviour
 
 
         }
+    }
+    private void OnTriggerEnter2D()
+    {
+        
+        
+            currentHealth -= 5;
+            FindObjectOfType<AudioManager>().Play("WindHitWithEarth");
+        
         
     }
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "PlayerBullet")
-        {
-            currentHealth--;
-
-        }
-
-    }
-
     public void TakingDamage(int damagetaken)
     {
         currentHealth -= damagetaken;
     }
+
+    
 }
 
 

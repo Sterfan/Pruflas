@@ -67,7 +67,7 @@ public class HealthManagerPlayer : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         
-       if (other.gameObject.tag == "HP")
+       if (other.gameObject.tag == "HP" && currentHealth != maxHealth)
         {
             currentHealth = currentHealth + 5f;
         }
