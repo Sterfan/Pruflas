@@ -16,19 +16,20 @@ public class MainMenu : MonoBehaviour
     {
 
         FindObjectOfType<AudioManager>().Play("TitleTheme");
-
-        StartCoroutine(Wait());
-
-    }
-
-    IEnumerator Wait()
-    {
-
-        yield return new WaitForSeconds(6.865f);
-
+        //yield return new WaitForSeconds(6.865f);
         FindObjectOfType<AudioManager>().Play("TitleTheme2");
+        //StartCoroutine(Wait());
 
     }
+
+    //IEnumerator Wait()
+    //{
+
+    //    yield return new WaitForSeconds(6.865f);
+
+    //    FindObjectOfType<AudioManager>().Play("TitleTheme2");
+
+    //}
 
     private void Update()
     {
