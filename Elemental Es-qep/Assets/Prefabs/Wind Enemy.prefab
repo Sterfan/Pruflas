@@ -88,7 +88,7 @@ MonoBehaviour:
   maxHealth: 6
   currentHealth: 0
   healthBar: {fileID: 2498784278909346743}
-  deathAnimation: {fileID: 549998992808343069, guid: a9b96471b8ddddb45a13a3b1e3d279af,
+  deathAnimation: {fileID: 1568382719384312284, guid: 0412fb79f5081aa44a3a83c267166fd1,
     type: 3}
   dropRate: 0
   HPdrop: {fileID: 1377815570064674861, guid: 29b89377711d9f34db0af2d264968451, type: 3}
