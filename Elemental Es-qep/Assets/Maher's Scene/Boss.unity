@@ -4335,7 +4335,7 @@ MonoBehaviour:
   maxHealth: 25
   currentHealth: 0
   healthBar: {fileID: 88554193}
-  deathAnimation: {fileID: 5647334928670021901, guid: e703118755e8b7c44b556ebf8c9a3baa,
+  deathAnimation: {fileID: 5312176235987470352, guid: 75831b0acc5f9b54db05eff663aec8e2,
     type: 3}
   waitForIT: 1
   cooldown: 1
