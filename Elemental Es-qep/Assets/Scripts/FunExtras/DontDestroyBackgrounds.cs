@@ -8,6 +8,11 @@ public class DontDestroyBackgrounds : MonoBehaviour
     {
         GameObject[] objs = GameObject.FindGameObjectsWithTag("Backgrounds");
 
+        if (FindObjectsOfType(GetType()).Length > 1)
+        {
+            Destroy(gameObject);
+        }
+
         DontDestroyOnLoad(this.gameObject);
     }
 }

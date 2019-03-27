@@ -8,7 +8,12 @@ public class DontDestroyPlayer : MonoBehaviour
 
     void Awake()
     {
-        GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
+        GameObject.FindGameObjectWithTag("Player");
+
+        if (FindObjectsOfType(GetType()).Length > 1)
+        {
+            Destroy(gameObject);
+        }
 
         DontDestroyOnLoad(this.gameObject);
     }
