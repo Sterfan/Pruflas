@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HPManagerWaterEnemy : MonoBehaviour
 {
-    public int maxHealth = 8;
+    public int maxHealth = 5;
     public int currentHealth;
     public Slider healthBar;
     public GameObject deathAnimation;
