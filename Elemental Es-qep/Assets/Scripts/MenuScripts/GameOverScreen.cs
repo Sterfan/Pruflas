@@ -2,9 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+using System;
 
 public class GameOverScreen : MonoBehaviour
 {
+
+    public EventSystem eventSystem;
+
     public void QuitGame()
     {
         Debug.Log("Quit Game");

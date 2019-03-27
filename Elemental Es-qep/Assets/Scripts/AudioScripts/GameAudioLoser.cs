@@ -13,6 +13,10 @@ public class GameAudioLoser : MonoBehaviour
 
         Destroy(GameObject.FindWithTag("Player"));
 
+        Destroy(GameObject.FindWithTag("UI"));
+
+        Destroy(GameObject.FindWithTag("Backgrounds"));
+
     }
 
     //IEnumerator Wait()

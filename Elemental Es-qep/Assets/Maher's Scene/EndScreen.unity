@@ -352,7 +352,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 420471318}
+      - m_Target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
+          type: 3}
         m_MethodName: StopMusic
         m_Mode: 5
         m_Arguments:
@@ -363,7 +364,8 @@ MonoBehaviour:
           m_StringArgument: YouLost
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 420471318}
+      - m_Target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
+          type: 3}
         m_MethodName: Play
         m_Mode: 5
         m_Arguments:
@@ -430,7 +432,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 420471318}
+        - m_Target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
+            type: 3}
           m_MethodName: Play
           m_Mode: 5
           m_Arguments:
@@ -510,18 +513,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &420471318 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
-    type: 3}
-  m_PrefabInstance: {fileID: 647724382}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2a92441d0f4fca4fba72099091fceab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &647724382
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -789,6 +780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77033bc551e73a4428ac0a7adc7093af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventSystem: {fileID: 342340469}
 --- !u!1 &1529739700
 GameObject:
   m_ObjectHideFlags: 0
@@ -1106,7 +1098,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 420471318}
+      - m_Target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
+          type: 3}
         m_MethodName: StopMusic
         m_Mode: 5
         m_Arguments:
@@ -1117,7 +1110,8 @@ MonoBehaviour:
           m_StringArgument: YouLost
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 420471318}
+      - m_Target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
+          type: 3}
         m_MethodName: Play
         m_Mode: 5
         m_Arguments:
@@ -1184,7 +1178,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 420471318}
+        - m_Target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
+            type: 3}
           m_MethodName: Play
           m_Mode: 5
           m_Arguments:
@@ -1385,7 +1380,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 420471318}
+      - m_Target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
+          type: 3}
         m_MethodName: StopMusic
         m_Mode: 5
         m_Arguments:
@@ -1396,7 +1392,8 @@ MonoBehaviour:
           m_StringArgument: YouLost
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 420471318}
+      - m_Target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
+          type: 3}
         m_MethodName: Play
         m_Mode: 5
         m_Arguments:
@@ -1463,7 +1460,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 420471318}
+        - m_Target: {fileID: 837735783403596878, guid: 3779f7db76977ab4983c5cc24da56d72,
+            type: 3}
           m_MethodName: Play
           m_Mode: 5
           m_Arguments:

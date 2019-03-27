@@ -11,6 +11,10 @@ public class GameAudioWinner : MonoBehaviour
 
         Destroy(GameObject.FindWithTag("Player"));
 
+        Destroy(GameObject.FindWithTag("UI"));
+
+        Destroy(GameObject.FindWithTag("Backgrounds"));
+
         FindObjectOfType<AudioManager>().StopMusic("BackgroundMusic");
 
         FindObjectOfType<AudioManager>().StopMusic("Boss1");
