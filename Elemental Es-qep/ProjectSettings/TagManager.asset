@@ -25,6 +25,7 @@ TagManager:
   - UI
   - Detection
   - Backgrounds
+  - healthBar
   layers:
   - Default
   - TransparentFX
