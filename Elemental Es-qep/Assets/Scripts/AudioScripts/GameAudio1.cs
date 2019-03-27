@@ -9,6 +9,9 @@ public class GameAudio1 : MonoBehaviour
     private void Start()
     {
 
+        FindObjectOfType<AudioManager>().StopMusic("BackgroundMusic");
+
+        FindObjectOfType<AudioManager>().Play("Boss1");
 
     }
 
@@ -20,7 +23,7 @@ public class GameAudio1 : MonoBehaviour
 
             FindObjectOfType<AudioManager>().StopMusic("BackgroundAmbiance");
 
-            FindObjectOfType<AudioManager>().StopMusic("BackgroundMusic");
+            FindObjectOfType<AudioManager>().StopMusic("Boss1");
 
         }
 
@@ -29,7 +32,7 @@ public class GameAudio1 : MonoBehaviour
 
             FindObjectOfType<AudioManager>().StopMusic("BackgroundAmbiance");
 
-            FindObjectOfType<AudioManager>().StopMusic("BackgroundMusic");
+            FindObjectOfType<AudioManager>().StopMusic("Boss1");
 
             SceneManager.LoadScene("MenuAdded");
 
@@ -40,7 +43,7 @@ public class GameAudio1 : MonoBehaviour
 
             FindObjectOfType<AudioManager>().StopMusic("BackgroundAmbiance");
 
-            FindObjectOfType<AudioManager>().StopMusic("BackgroundMusic");
+            FindObjectOfType<AudioManager>().StopMusic("Boss1");
 
             SceneManager.LoadScene("Boss");
 

@@ -19,6 +19,11 @@ public class LVL4SceneManage : MonoBehaviour
         if (scoreScript.scoreValue >= 150)
         {
             StartCoroutine(LoadScene());
+
+            FindObjectOfType<AudioManager>().StopMusic("BackgroundMusic");
+
+            FindObjectOfType<AudioManager>().Play("Boss1");
+
         }
     }
 

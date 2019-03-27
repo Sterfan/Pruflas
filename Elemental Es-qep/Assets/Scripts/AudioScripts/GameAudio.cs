@@ -39,22 +39,22 @@ public class GameAudio : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Y))
         {
 
-            SceneManager.LoadScene("MenuAdded");
-
             FindObjectOfType<AudioManager>().StopMusic("BackgroundAmbiance");
 
             FindObjectOfType<AudioManager>().StopMusic("BackgroundMusic");
+
+            SceneManager.LoadScene("MenuAdded");
 
         }
 
         if (Input.GetKeyDown(KeyCode.P))
         {
 
-            SceneManager.LoadScene("Boss");
-
             FindObjectOfType<AudioManager>().StopMusic("BackgroundAmbiance");
 
             FindObjectOfType<AudioManager>().StopMusic("BackgroundMusic");
+
+            SceneManager.LoadScene("Boss");
 
         }
 
