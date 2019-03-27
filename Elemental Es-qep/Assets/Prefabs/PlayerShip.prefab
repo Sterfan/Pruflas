@@ -144,7 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 20
   currentHealth: 0
-  healthBar: {fileID: 2917659644892038510, guid: 57fd112203993b0488f423300be7051e,
+  healthBar: {fileID: 3844366991295500077, guid: 57fd112203993b0488f423300be7051e,
     type: 3}
   deathAnimation: {fileID: 4384832423005269797, guid: 7c8e60e8ab47f2c488392ec8c7e6a823,
     type: 3}
