@@ -506,7 +506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5193080e0504de743820cfd82dfea1f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 8
+  maxHealth: 5
   currentHealth: 0
   healthBar: {fileID: 2976209351537715458}
   deathAnimation: {fileID: 6343939735063645384, guid: 55dd851d0d46e024bb101ebda7755d59,
@@ -1046,6 +1046,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3412557972341324065, guid: a1600ddb484abcd45a3482604baf0581,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 3412557972341324065, guid: a1600ddb484abcd45a3482604baf0581,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.326
+      objectReference: {fileID: 0}
     - target: {fileID: 4104152185247296980, guid: a1600ddb484abcd45a3482604baf0581,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1080,16 +1090,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412557972341324065, guid: a1600ddb484abcd45a3482604baf0581,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -1.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412557972341324065, guid: a1600ddb484abcd45a3482604baf0581,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.326
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1600ddb484abcd45a3482604baf0581, type: 3}
