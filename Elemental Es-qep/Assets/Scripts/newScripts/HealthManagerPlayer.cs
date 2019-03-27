@@ -11,8 +11,8 @@ public class HealthManagerPlayer : MonoBehaviour
     public float  currentHealth;
     public Slider healthBar;
     public GameObject deathAnimation;
-    public float waitForIT = 1;
-    public float cooldown = 1;
+    public float waitForIT = 0.5f;
+    public float cooldown = 0.5f;
     public static bool playerAlive;
 
     void Start()
