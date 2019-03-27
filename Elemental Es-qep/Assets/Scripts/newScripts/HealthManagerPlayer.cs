@@ -47,6 +47,7 @@ public class HealthManagerPlayer : MonoBehaviour
 
             if (cooldown <= 0)
             {
+                scoreScript.scoreValue = 0;
                 Destroy(gameObject);
                 cooldown = waitForIT;
                 SceneManager.LoadScene("EndScreen");

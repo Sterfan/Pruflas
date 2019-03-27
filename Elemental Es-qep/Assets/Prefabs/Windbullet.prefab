@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7428444500312524384}
   - component: {fileID: 576675532861053271}
   - component: {fileID: 2344655863402004578}
-  - component: {fileID: 6667996088291974394}
+  - component: {fileID: 3649550717698529146}
   m_Layer: 10
   m_Name: Windbullet
   m_TagString: Windbullet
@@ -190,7 +190,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6667996088291974394
+--- !u!114 &3649550717698529146
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,6 +199,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 6295074979412082892}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c66b541f8a247d46b78bd70c4b785f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 205e45bbaafe1e340bf95133a847c365, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -491,7 +491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.18632075, g: 0.745283, b: 0.6261227, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -535,6 +535,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: healthBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192588029927865508, guid: 57fd112203993b0488f423300be7051e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192588029927865508, guid: 57fd112203993b0488f423300be7051e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1478114299585179688, guid: 57fd112203993b0488f423300be7051e,
         type: 3}
@@ -640,16 +650,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8192588029927865508, guid: 57fd112203993b0488f423300be7051e,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8192588029927865508, guid: 57fd112203993b0488f423300be7051e,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57fd112203993b0488f423300be7051e, type: 3}

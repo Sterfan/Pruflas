@@ -20,6 +20,7 @@ public class LVL2SceneManage : MonoBehaviour
         {
             StartCoroutine(LoadScene());
         }
+         
     }
 
     IEnumerator LoadScene()
