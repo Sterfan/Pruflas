@@ -41,12 +41,20 @@ public class GameAudio : MonoBehaviour
 
             SceneManager.LoadScene("MenuAdded");
 
+            FindObjectOfType<AudioManager>().StopMusic("BackgroundAmbiance");
+
+            FindObjectOfType<AudioManager>().StopMusic("BackgroundMusic");
+
         }
 
         if (Input.GetKeyDown(KeyCode.P))
         {
 
             SceneManager.LoadScene("Boss");
+
+            FindObjectOfType<AudioManager>().StopMusic("BackgroundAmbiance");
+
+            FindObjectOfType<AudioManager>().StopMusic("BackgroundMusic");
 
         }
 

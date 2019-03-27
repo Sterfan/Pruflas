@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 8673758891240744618}
   - component: {fileID: 7532393906774372645}
   - component: {fileID: 6839025537430944133}
+  - component: {fileID: 3428936902598194796}
   m_Layer: 9
   m_Name: PlayerShip
   m_TagString: Player
@@ -550,3 +551,15 @@ MonoBehaviour:
   ShipEarth: {fileID: 21300000, guid: 89757d77e8b4dc74b841a3343961e7e1, type: 3}
   ShipWind: {fileID: 21300000, guid: e1a1256336af36c47a4a632c9be78fbc, type: 3}
   ShipWater: {fileID: 21300000, guid: 09a3764d11b8fe041aeb14138d756b1b, type: 3}
+--- !u!114 &3428936902598194796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7532393906774372652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ccb0ae004630c144800a225e2619340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

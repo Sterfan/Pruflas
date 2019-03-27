@@ -24,6 +24,7 @@ TagManager:
   - HP
   - UI
   - Detection
+  - Backgrounds
   layers:
   - Default
   - TransparentFX
