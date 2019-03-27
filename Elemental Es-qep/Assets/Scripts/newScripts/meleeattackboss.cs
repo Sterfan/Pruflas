@@ -4,40 +4,31 @@ using UnityEngine;
 
 public class meleeattackboss : MonoBehaviour
 {
-    public Transform[] points;
-    public float speed = 5f;
-    Transform currentPoint;
-    int currentPointIndex;
+    private float moveSpeed = 0.06f;
+    
 
+    public Transform[] moveSpots;
+    private int randomizedSpot;
 
 
     void Start()
     {
-        currentPointIndex = 0;
-        currentPoint = points[currentPointIndex];
+       
+        randomizedSpot = Random.Range(0, moveSpots.Length);
+
     }
+
 
 
     void Update()
     {
-        transform.Translate(Vector3.up * Time.deltaTime * speed);
+        transform.position = Vector2.MoveTowards(transform.position, moveSpots[randomizedSpot].position, moveSpeed);
 
-        if (Vector3.Distance (transform.position,currentPoint.position) < .1f)
+        if (Vector2.Distance(transform.position, moveSpots[randomizedSpot].position) < 0.1f)
         {
-            if (currentPointIndex +1 < points.Length)
-            {
-                currentPointIndex++;
-            }
-            else
-            {
-                currentPointIndex = 0;
-            }
-            currentPoint = points[currentPointIndex];
+            
+            randomizedSpot = Random.Range(0, moveSpots.Length);
+            transform.position = Vector2.MoveTowards(transform.position, moveSpots[randomizedSpot].position, moveSpeed );
         }
-        Vector3 pointdirection = currentPoint.position - transform.position;
-        float angle = Mathf.Atan2(pointdirection.y, pointdirection.x) * Mathf.Rad2Deg - 180f;
-
-        Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 180f);
     }
 }
