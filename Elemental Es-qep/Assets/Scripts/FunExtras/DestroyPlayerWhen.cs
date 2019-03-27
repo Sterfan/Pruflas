@@ -10,6 +10,10 @@ public class DestroyPlayerWhen : MonoBehaviour
 
         Destroy(GameObject.FindWithTag("Player"));
 
+        Destroy(GameObject.FindWithTag("Backgrounds"));
+
+        Destroy(GameObject.FindWithTag("UI"));
+
     }
 
     // Update is called once per frame

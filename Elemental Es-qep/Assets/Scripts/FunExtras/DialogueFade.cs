@@ -5,18 +5,25 @@ using UnityEngine.Animations;
 
 public class DialogueFade : MonoBehaviour
 {
-    //public Animator animator;
 
-    //void Awake()
-    //{
+    void Awake()
+    {
 
-    //    animator.Play(DialogueBox);
+        Time.timeScale = 0f;
 
-    //}
+    }
 
 
     void Update()
     {
-        
+
+        if (Input.GetMouseButtonDown(0))
+        {
+
+            Time.timeScale = 1f;
+            Destroy(gameObject);
+
+        }
+
     }
 }
