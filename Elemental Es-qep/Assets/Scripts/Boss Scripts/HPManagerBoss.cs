@@ -29,6 +29,7 @@ public class HPManagerBoss : MonoBehaviour
       
         if (currentHealth <= 0)
         {
+            scoreScript.scoreValue = 0;
             win = true;
             cooldown -= Time.deltaTime;
             Instantiate(deathAnimation, transform.position, transform.rotation);
