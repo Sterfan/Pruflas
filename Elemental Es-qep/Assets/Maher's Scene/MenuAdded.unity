@@ -441,12 +441,12 @@ PrefabInstance:
     - target: {fileID: 7085126221930474048, guid: 5ce7f3c96140db04a8d48fd0e71795b3,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -36.4321
+      value: -36.43213
       objectReference: {fileID: 0}
     - target: {fileID: 7085126221930474048, guid: 5ce7f3c96140db04a8d48fd0e71795b3,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -20.478302
+      value: -20.478394
       objectReference: {fileID: 0}
     - target: {fileID: 7085126221930474048, guid: 5ce7f3c96140db04a8d48fd0e71795b3,
         type: 3}
@@ -818,5 +818,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 74ec25beff3a9664891a181801b52b99,
         type: 3}
+    - target: {fileID: 7340912470078849792, guid: 84e1ffa97e3a6e748b68e1a710e46fcb,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1600
+      objectReference: {fileID: 0}
+    - target: {fileID: 7340912470078849792, guid: 84e1ffa97e3a6e748b68e1a710e46fcb,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7340912470078849792, guid: 84e1ffa97e3a6e748b68e1a710e46fcb,
+        type: 3}
+      propertyPath: m_ScreenMatchMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7340912470078849792, guid: 84e1ffa97e3a6e748b68e1a710e46fcb,
+        type: 3}
+      propertyPath: m_ReferencePixelsPerUnit
+      value: 500
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84e1ffa97e3a6e748b68e1a710e46fcb, type: 3}

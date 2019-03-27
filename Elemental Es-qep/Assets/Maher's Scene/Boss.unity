@@ -192,7 +192,7 @@ Transform:
   m_LocalScale: {x: 1.0604786, y: 1.0615243, z: 1}
   m_Children: []
   m_Father: {fileID: 1774469967}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &59552124
 PolygonCollider2D:
@@ -629,7 +629,7 @@ Transform:
   m_Children:
   - {fileID: 825240833}
   m_Father: {fileID: 1774469967}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &93148285
 PolygonCollider2D:
@@ -1186,7 +1186,7 @@ Transform:
   - {fileID: 1148002010}
   - {fileID: 1882639187}
   m_Father: {fileID: 1774469967}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &210144920
 GameObject:
@@ -1293,11 +1293,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 517860572}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7821032, y: -4.346942, z: 0}
-  m_LocalScale: {x: 2.6511965, y: 2.6538107, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1774469967}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &534425015
 GameObject:
@@ -1455,7 +1455,7 @@ Transform:
   m_LocalScale: {x: 0.79535896, y: 0.79614323, z: 1}
   m_Children: []
   m_Father: {fileID: 1774469967}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &633987142
 PolygonCollider2D:
@@ -2215,11 +2215,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9124496288016175049, guid: 5ab701fee8e02c94d8e7c64d134a3515,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8826983393599838729, guid: 5ab701fee8e02c94d8e7c64d134a3515,
         type: 3}
       propertyPath: m_IsActive
@@ -2284,6 +2279,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -321.03998
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124496288016175049, guid: 5ab701fee8e02c94d8e7c64d134a3515,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ab701fee8e02c94d8e7c64d134a3515, type: 3}
@@ -2560,7 +2560,7 @@ Transform:
   m_LocalScale: {x: 2.6511965, y: 2.6538107, z: 1}
   m_Children: []
   m_Father: {fileID: 1774469967}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1148002009
 GameObject:
@@ -2724,7 +2724,7 @@ Transform:
   m_Children:
   - {fileID: 1715580281}
   m_Father: {fileID: 1774469967}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
 --- !u!114 &1485024837
 MonoBehaviour:
@@ -2855,7 +2855,7 @@ Transform:
   m_LocalScale: {x: 0.79535896, y: 0.79614323, z: 1}
   m_Children: []
   m_Father: {fileID: 1774469967}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1559611180
 MonoBehaviour:
@@ -3396,7 +3396,7 @@ Transform:
   m_Children:
   - {fileID: 1781011273}
   m_Father: {fileID: 1774469967}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
 --- !u!114 &1717572486
 MonoBehaviour:
@@ -3473,7 +3473,7 @@ Transform:
   m_LocalScale: {x: 0.79535896, y: 0.79614323, z: 1}
   m_Children: []
   m_Father: {fileID: 1774469967}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1774469964
 GameObject:
@@ -3575,7 +3575,6 @@ Transform:
   m_LocalPosition: {x: -0.29500008, y: 1.638, z: 0}
   m_LocalScale: {x: 0.3771882, y: 0.37681663, z: 1}
   m_Children:
-  - {fileID: 517860575}
   - {fileID: 59552123}
   - {fileID: 1823580938}
   - {fileID: 93148284}
@@ -4027,7 +4026,7 @@ Transform:
   m_LocalScale: {x: 1.0604786, y: 1.0615243, z: 1}
   m_Children: []
   m_Father: {fileID: 1774469967}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
 --- !u!60 &1823580939
 PolygonCollider2D:
