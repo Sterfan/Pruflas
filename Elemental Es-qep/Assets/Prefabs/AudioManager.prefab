@@ -212,10 +212,4 @@ MonoBehaviour:
     source: {fileID: 0}
     isLooping: 1
     playOnAwake: 0
-  - audioName: Winner
-    audioClip: {fileID: 8300000, guid: 84f1ee30c84f958479b154a22b639dbd, type: 3}
-    volume: 0.2
-    source: {fileID: 0}
-    isLooping: 1
-    playOnAwake: 0
   Mixer: {fileID: 24100000, guid: d84644eb59c7bb743ab737ba29f18437, type: 2}
