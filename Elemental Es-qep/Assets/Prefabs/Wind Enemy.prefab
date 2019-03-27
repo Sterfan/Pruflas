@@ -88,7 +88,7 @@ MonoBehaviour:
   maxHealth: 6
   currentHealth: 0
   healthBar: {fileID: 2498784278909346743}
-  deathAnimation: {fileID: 5323184803549429549, guid: f6097100cfd9395448f13cf1340f3e8c,
+  deathAnimation: {fileID: 549998992808343069, guid: a9b96471b8ddddb45a13a3b1e3d279af,
     type: 3}
   dropRate: 0
   HPdrop: {fileID: 1377815570064674861, guid: 29b89377711d9f34db0af2d264968451, type: 3}
@@ -693,6 +693,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0.04
       objectReference: {fileID: 0}
+    - target: {fileID: 2608799983106832505, guid: c16688f539bfa8b4b812d77807936992,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 2608799983106832505, guid: c16688f539bfa8b4b812d77807936992,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.023
+      objectReference: {fileID: 0}
     - target: {fileID: 1910182251792965748, guid: c16688f539bfa8b4b812d77807936992,
         type: 3}
       propertyPath: m_MaxValue
@@ -717,16 +727,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2608799983106832505, guid: c16688f539bfa8b4b812d77807936992,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.47
-      objectReference: {fileID: 0}
-    - target: {fileID: 2608799983106832505, guid: c16688f539bfa8b4b812d77807936992,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.023
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c16688f539bfa8b4b812d77807936992, type: 3}
