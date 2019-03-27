@@ -6,24 +6,11 @@ using UnityEngine.SceneManagement;
 public class DontDestroyPlayer : MonoBehaviour
 {
 
-    void Start()
+    void Awake()
     {
-        string sceneName = currentScene.name;
-
-        Scene currentScene = SceneManager.GetActiveScene();
-
         GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
 
         DontDestroyOnLoad(this.gameObject);
-
-        if (sceneName == ("Winscreen"))
-        {
-
-            GameObject[] objs = GameObject.FindGameObjectsWithTag("Player");
-
-            Destroy(this.gameObject);
-
-        }
     }
 
     //void Update()

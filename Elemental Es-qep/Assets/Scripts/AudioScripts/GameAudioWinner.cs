@@ -9,9 +9,9 @@ public class GameAudioWinner : MonoBehaviour
     private void Start()
     {
 
-        FindObjectOfType<AudioManager>().Play("Winner");
+        Destroy(GameObject.FindWithTag("Player"));
 
-        //StartCoroutine(Wait());
+        FindObjectOfType<AudioManager>().Play("Winner");
 
     }
 
@@ -26,6 +26,8 @@ public class GameAudioWinner : MonoBehaviour
 
     private void Update()
     {
+
+        FindObjectOfType<AudioManager>().StopMusic("Warning");
 
         if (Input.GetKeyDown(KeyCode.Y))
         {

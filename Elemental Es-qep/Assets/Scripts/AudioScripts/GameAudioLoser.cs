@@ -11,7 +11,7 @@ public class GameAudioLoser : MonoBehaviour
 
         FindObjectOfType<AudioManager>().Play("YouLost");
 
-        //StartCoroutine(Wait());
+        Destroy(GameObject.FindWithTag("Player"));
 
     }
 
