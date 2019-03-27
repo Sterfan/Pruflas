@@ -38,7 +38,9 @@ public class HealthManagerPlayer : MonoBehaviour
         {
             cooldown -= Time.deltaTime;
             playerAlive = false;
-            
+            PlayerColorChange.spriteVersion = 0;
+            Shooting.currentBullet = 0;
+            scoreScript.scoreValue = 0;
             Instantiate(deathAnimation, transform.position, transform.rotation);
 
             FindObjectOfType<AudioManager>().StopMusic("Warning");
@@ -47,6 +49,8 @@ public class HealthManagerPlayer : MonoBehaviour
 
             if (cooldown <= 0)
             {
+                PlayerColorChange.spriteVersion = 0;
+                Shooting.currentBullet = 0;
                 scoreScript.scoreValue = 0;
                 Destroy(gameObject);
                 cooldown = waitForIT;

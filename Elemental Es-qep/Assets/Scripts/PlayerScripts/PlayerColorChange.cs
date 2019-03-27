@@ -10,9 +10,9 @@ public class PlayerColorChange : MonoBehaviour
     public Sprite ShipEarth;
     public Sprite ShipWind;
     public Sprite ShipWater;
-    int spriteVersion = 0;
+    public static int spriteVersion = 0;
 
-    private Sprite[] sprites = new Sprite[4];
+    public Sprite[] sprites = new Sprite[4];
 
     void Start()
     {
@@ -38,5 +38,7 @@ public class PlayerColorChange : MonoBehaviour
             spriteRenderer.sprite = sprites[spriteVersion];
 
         }
+
+        
     }
 }
